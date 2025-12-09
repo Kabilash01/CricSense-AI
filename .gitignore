@@ -73,3 +73,5 @@ htmlcov/
 
 # Docker
 *.dockerignore
+ByteTrack/
+oostudio/
