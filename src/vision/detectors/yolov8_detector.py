@@ -1,38 +1,54 @@
 from ultralytics import YOLO
 import torch
+from pathlib import Path
 
-class YoloV8Detector:
-    def __init__(self, model_path='yolov8n.pt', device=None):
-        self.device = device or ("cuda:0" if torch.cuda.is_available() else "cpu")
-        print("[YOLO] Loading model on device:", self.device)
-
+class YoloV8Tracker:
+    def __init__(self, model_path, device="cuda:0"):
+        self.device = device if torch.cuda.is_available() else "cpu"
         self.model = YOLO(model_path)
 
-        # FORCE device
-        try:
+        if self.device != "cpu":
             self.model.to(self.device)
-        except Exception as e:
-            print("WARNING: .to(device) failed:", e)
 
-        self.warmed = False
+        # 🔑 Absolute path to ByteTrack config
+        self.tracker_config = (
+            Path(__file__)
+            .resolve()
+            .parents[3] / "configs" / "bytetrack.yaml"
+        )
 
-    def predict(self, frame, conf=0.25, iou=0.45, verbose=False):
-        # Force device EACH CALL (YOLO sometimes ignores internal device)
-        if hasattr(self.model, "predictor") and hasattr(self.model.predictor, "model"):
-            try:
-                self.model.predictor.model.to(self.device)
-            except:
-                pass
+        if not self.tracker_config.exists():
+            raise FileNotFoundError(
+                f"ByteTrack config not found: {self.tracker_config}"
+            )
 
-        # Run inference
-        results = self.model(frame, device=self.device, conf=conf, iou=iou, verbose=False)
+    def track(self, frame, conf=0.3):
+        results = self.model.track(
+            frame,
+            conf=conf,
+            tracker=str(self.tracker_config),
+            persist=True,
+            device=self.device,
+            verbose=False
+        )[0]
 
         detections = []
-        r = results[0]
-        for b in r.boxes:
-            xyxy = b.xyxy.cpu().numpy().tolist()[0]
-            score = float(b.conf.cpu().numpy().tolist()[0])
-            cls = int(b.cls.cpu().numpy().tolist()[0])
-            name = self.model.names.get(cls, str(cls))
-            detections.append({'box': xyxy, 'score': score, 'class': cls, 'name': name})
+
+        if results.boxes is None or results.boxes.id is None:
+            return detections
+
+        for box, track_id in zip(results.boxes, results.boxes.id):
+            x1, y1, x2, y2 = box.xyxy[0].tolist()
+            cls_id = int(box.cls[0])
+            score = float(box.conf[0])
+            name = self.model.names[cls_id]
+
+            detections.append({
+                "track_id": int(track_id),
+                "box": [x1, y1, x2, y2],
+                "score": score,
+                "class_id": cls_id,
+                "name": name
+            })
+
         return detections
