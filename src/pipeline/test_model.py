@@ -1,67 +1,66 @@
-# src/pipeline/realtime_pipeline.py
 import sys
 from pathlib import Path
-import time
 import cv2
-import os
-import torch
+import time
 
-
-# add project root for imports
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from ingest.video_reader import VideoReader
-from ui.overlay import draw_boxes
-from vision.detectors.yolov8_detector import YoloV8Detector
+from vision.detectors.yolov8_detector import YoloV8Tracker
+from core.player_registry import PlayerRegistry
 
-def draw_labeled_boxes(frame, detections):
-    for d in detections:
-        x1, y1, x2, y2 = map(int, d['box'])
-        label = f"{d['name']}:{d['score']:.2f}"
-        cv2.rectangle(frame, (x1,y1), (x2,y2), (0,255,0), 2)
-        # put label
-        cv2.putText(frame, label, (x1, max(15,y1-5)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 1, cv2.LINE_AA)
-    return frame
+def center_of_box(box):
+    x1, y1, x2, y2 = box
+    return int((x1 + x2) / 2), int((y1 + y2) / 2)
+
+def infer_role_from_class(name):
+    if name in [
+        "Batsman",
+        "Bowler",
+        "Wicket_Keeper",
+        "Umpire",
+        "Player_Generic"
+    ]:
+        return name
+    return None
+
 
 def main():
-    video_path = Path("C:\\cricket-ai\\data\\samples\\test3.mp4").resolve()
-    if not video_path.exists():
-        print("ERROR: sample.mp4 missing at:", video_path)
-        return
+    video_path = r"C:\\cricket-ai\\data\\samples\\test3.mp4"
+    model_path = r"C:\\cricket-ai\\yolov8m_production4\\weights\\best.pt"
 
-    # Choose device: 'cpu' or 'cuda:0' as available
-    device = "cuda:0" if torch.cuda.is_available() else "cpu"  # None = let ultralytics auto-select; set 'cpu' or 'cuda:0' if you prefer
-    model_path = "C:\\cricket-ai\\yolov8m_production4\\weights\\best.pt"  # small, fast model. Replace with your fine-tuned weights later.
-    detector = YoloV8Detector(model_path=model_path, device=device)
+    tracker = YoloV8Tracker(model_path)
+    registry = PlayerRegistry()
 
-    reader = VideoReader(str(video_path))
-    frame_count = 0
-    t0 = time.time()
+    reader = VideoReader(video_path)
+    frame_id = 0
 
     for frame in reader:
-        frame_count += 1
-        t_start = time.time()
+        frame_id += 1
+        detections = tracker.track(frame, conf=0.3)
 
-        # run detection (adjust conf for speed/precision)
-        detections = detector.predict(frame, conf=0.35)
+        for det in detections:
+            track_id = det["track_id"]
+            box = det["box"]
+            role_vote = infer_role_from_class(det["name"])
+            center = center_of_box(box)
 
-        # draw boxes
-        frame = draw_labeled_boxes(frame, detections)
+            registry.update(track_id, role_vote, center, frame_id)
 
-        # compute FPS
-        elapsed = time.time() - t_start
-        total_elapsed = time.time() - t0
-        fps = frame_count / total_elapsed if total_elapsed>0 else 0.0
+            role = registry.get_role(track_id)
 
-        # overlay simple stats
-        cv2.putText(frame, f"Frame: {frame_count} FPS: {fps:.1f}", (10,20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,255), 1, cv2.LINE_AA)
+            # Draw
+            x1, y1, x2, y2 = map(int, box)
+            label = f"ID {track_id} | {role}"
 
-        cv2.imshow("Cricket AI Pipeline - Detections", frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+            cv2.rectangle(frame, (x1, y1), (x2, y2), (0,255,0), 2)
+            cv2.putText(frame, label, (x1, y1-8),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
+
+        cv2.imshow("YOLOv8 + ByteTrack + Player Registry", frame)
+        if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
-    print("Total frames processed:", frame_count)
     reader.release()
     cv2.destroyAllWindows()
 
