@@ -24,14 +24,14 @@ def draw_labeled_boxes(frame, detections):
     return frame
 
 def main():
-    video_path = Path("C:\\cricket-ai\\data\\samples\\test.mp4").resolve()
+    video_path = Path("C:\\cricket-ai\\data\\samples\\test3.mp4").resolve()
     if not video_path.exists():
         print("ERROR: sample.mp4 missing at:", video_path)
         return
 
     # Choose device: 'cpu' or 'cuda:0' as available
     device = "cuda:0" if torch.cuda.is_available() else "cpu"  # None = let ultralytics auto-select; set 'cpu' or 'cuda:0' if you prefer
-    model_path = "yolov8n.pt"  # small, fast model. Replace with your fine-tuned weights later.
+    model_path = "C:\\cricket-ai\\yolov8m_production4\\weights\\best.pt"  # small, fast model. Replace with your fine-tuned weights later.
     detector = YoloV8Detector(model_path=model_path, device=device)
 
     reader = VideoReader(str(video_path))
