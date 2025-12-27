@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 import cv2
 import math
+import os
 
 # --------------------------------------------------
 # Add src/ to PYTHONPATH
@@ -12,6 +13,7 @@ from vision.detectors.yolov8_detector import YoloV8Tracker
 from core.player_registry import PlayerRegistry
 from ingest.video_reader import VideoReader
 
+
 # --------------------------------------------------
 # Helper functions
 # --------------------------------------------------
@@ -21,58 +23,62 @@ def center_of_box(box):
 
 
 def infer_role_from_class(name):
-    if name in [
-        "Batsman",
-        "Bowler",
-        "Wicket_Keeper",
-        "Umpire",
-        "Player_Generic",
-        "Ball"
-    ]:
+    if name in ["Batsman", "Bowler", "Player_Generic", "Wicket_Keeper"]:
         return name
-    return "Unknown"
-
-
-def distance(p1, p2):
-    return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
+    return "Ignore"
 
 
 # --------------------------------------------------
-# Pitch / zone logic
+# JERSEY VISIBILITY LOGIC (CRITICAL)
 # --------------------------------------------------
-def define_pitch_zones(w, h):
-    pitch_top = int(h * 0.35)
-    pitch_bottom = int(h * 0.65)
+def is_jersey_visible(player_crop):
+    h, w = player_crop.shape[:2]
 
-    batting_crease = (
-        int(w * 0.45),
-        pitch_bottom - 20,
-        int(w * 0.55),
-        pitch_bottom + 20
+    # TEMP: very relaxed
+    if h < 80 or w < 40:
+        return False
+
+    return True
+
+
+
+def extract_jersey_regions(player_crop):
+    """
+    Extract multiple candidate jersey regions.
+    We do NOT decide here which is correct.
+    """
+    h, w = player_crop.shape[:2]
+    regions = []
+
+    # Candidate 1: upper torso (front-facing)
+    regions.append(
+        player_crop[
+            int(h * 0.30):int(h * 0.55),
+            int(w * 0.25):int(w * 0.75)
+        ]
     )
 
-    bowling_crease = (
-        int(w * 0.45),
-        pitch_top - 20,
-        int(w * 0.55),
-        pitch_top + 20
+    # Candidate 2: upper-back (back-facing)
+    regions.append(
+        player_crop[
+            int(h * 0.20):int(h * 0.50),
+            int(w * 0.15):int(w * 0.85)
+        ]
     )
 
-    return batting_crease, bowling_crease
+    return regions
 
+def is_good_region(crop):
+    if crop is None:
+        return False
 
-def inside_zone(point, zone):
-    x, y = point
-    x1, y1, x2, y2 = zone
-    return x1 <= x <= x2 and y1 <= y <= y2
+    h, w = crop.shape[:2]
+    if h < 30 or w < 40:
+        return False
 
+    # TEMP: no blur rejection
+    return True
 
-def refine_role(role, center, batting_crease, bowling_crease):
-    if inside_zone(center, batting_crease):
-        return "Batsman"
-    if inside_zone(center, bowling_crease):
-        return "Bowler"
-    return role
 
 
 # --------------------------------------------------
@@ -83,37 +89,40 @@ def main():
     model_path = r"C:\cricket player train\cricket-ai\yolov8m_production4\weights\best.pt"
 
     tracker = YoloV8Tracker(model_path)
-    registry = PlayerRegistry(max_idle_frames=60)
+    registry = PlayerRegistry()
 
     reader = VideoReader(video_path)
     frame_id = 0
 
-    batting_crease = bowling_crease = None
-    shot_counter = {}
+    # 🔥 ABSOLUTE PATH (PROJECT ROOT)
+    PROJECT_ROOT = Path(__file__).resolve().parents[2]
+    JERSEY_OUT_DIR = PROJECT_ROOT / "jersey_crops"
+    JERSEY_OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    SHOT_DISTANCE_THRESHOLD = 60
-    SHOT_FRAMES = 3
+    print("Jersey crops will be saved to:", JERSEY_OUT_DIR)
+
+    JERSEY_SAMPLE_INTERVAL = 1  # opportunistic sampling
 
     for frame in reader:
         frame_id += 1
-        h, w = frame.shape[:2]
-
-        if frame_id == 1:
-            batting_crease, bowling_crease = define_pitch_zones(w, h)
-
         detections = tracker.track(frame, conf=0.3)
-        ball_center = None
 
         for det in detections:
             raw_id = det["track_id"]
             box = det["box"]
             role = infer_role_from_class(det["name"])
+
+            if role == "Ignore":
+                continue
+
+            x1, y1, x2, y2 = map(int, box)
+            player_crop = frame[y1:y2, x1:x2]
+
+            if player_crop.size == 0:
+                continue
+
             center = center_of_box(box)
 
-            # Zone-based role refinement
-            role = refine_role(role, center, batting_crease, bowling_crease)
-
-            # Resolve to stable ID
             stable_id = registry.resolve_id(
                 raw_id=raw_id,
                 center=center,
@@ -123,13 +132,35 @@ def main():
 
             registry.update(stable_id, center)
 
-            if role == "Ball":
-                ball_center = center
+            # --------------------------------------
+            # JERSEY REGION SAMPLING (CORRECT WAY)
+            # --------------------------------------
+            if frame_id % JERSEY_SAMPLE_INTERVAL == 0:
 
-            # Draw ONLY clean bounding box + label
-            x1, y1, x2, y2 = map(int, box)
+                jersey_regions = extract_jersey_regions(player_crop)
+
+        sid_dir = JERSEY_OUT_DIR / f"SID_{stable_id}"
+        sid_dir.mkdir(parents=True, exist_ok=True)
+
+        for idx, region in enumerate(jersey_regions):
+            if region is None or region.size == 0:
+                continue
+
+            # Save ALL regions (debug)
+            debug_path = sid_dir / f"DEBUG_frame_{frame_id}_r{idx}.jpg"
+            cv2.imwrite(str(debug_path), region)
+
+            # Now apply (relaxed) quality check
+            if is_good_region(region):
+                registry.add_jersey_crop(stable_id, region)
+
+                good_path = sid_dir / f"GOOD_frame_{frame_id}_r{idx}.jpg"
+                cv2.imwrite(str(good_path), region)
+
+            # --------------------------------------
+            # CLEAN VISUALIZATION
+            # --------------------------------------
             label = f"SID {stable_id} | {role}"
-
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
             cv2.putText(
                 frame,
@@ -141,35 +172,19 @@ def main():
                 2
             )
 
-        # --------------------------------------------------
-        # BALL ↔ BATSMAN INTERACTION (SHOT DETECTION)
-        # --------------------------------------------------
-        if ball_center is not None:
-            for sid, player in registry.players.items():
-                if player["final_role"] == "Batsman":
-                    batsman_center = player["last_center"]
-
-                    if distance(ball_center, batsman_center) < SHOT_DISTANCE_THRESHOLD:
-                        shot_counter[sid] = shot_counter.get(sid, 0) + 1
-                        if shot_counter[sid] >= SHOT_FRAMES:
-                            cv2.putText(
-                                frame,
-                                "SHOT DETECTED",
-                                (50, 60),
-                                cv2.FONT_HERSHEY_SIMPLEX,
-                                1.0,
-                                (0, 0, 255),
-                                3
-                            )
-                    else:
-                        shot_counter[sid] = 0
-
-        cv2.imshow("Cricket AI – Clean Output", frame)
+        cv2.imshow("Cricket AI – Jersey Crop Collection (FIXED)", frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
     reader.release()
     cv2.destroyAllWindows()
+
+    # ------------------------------------------
+    # SUMMARY
+    # ------------------------------------------
+    print("\nJERSEY CROP SUMMARY")
+    for sid, player in registry.players.items():
+        print(f"SID {sid}: {len(player['jersey_crops'])} jersey regions collected")
 
 
 if __name__ == "__main__":
