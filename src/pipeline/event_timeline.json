@@ -1,0 +1,1010 @@
+[
+  {
+    "ts": 1766939595.181,
+    "frame": 1,
+    "sid": 1,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939595.181,
+    "frame": 1,
+    "sid": 1,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939599.32,
+    "frame": 26,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939599.32,
+    "frame": 26,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939599.32,
+    "frame": 26,
+    "sid": 3,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939599.32,
+    "frame": 26,
+    "sid": 3,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939603.863,
+    "frame": 61,
+    "sid": 4,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939603.863,
+    "frame": 61,
+    "sid": 4,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939603.898,
+    "frame": 62,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939603.898,
+    "frame": 62,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939605.7,
+    "frame": 73,
+    "sid": 6,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939605.7,
+    "frame": 73,
+    "sid": 6,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939608.369,
+    "frame": 91,
+    "sid": 7,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939608.369,
+    "frame": 91,
+    "sid": 7,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939619.531,
+    "frame": 224,
+    "sid": 8,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939619.531,
+    "frame": 224,
+    "sid": 8,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939622.383,
+    "frame": 299,
+    "sid": 9,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939622.383,
+    "frame": 299,
+    "sid": 9,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939630.821,
+    "frame": 502,
+    "sid": 10,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939630.821,
+    "frame": 502,
+    "sid": 10,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939641.937,
+    "frame": 579,
+    "sid": 11,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939641.937,
+    "frame": 579,
+    "sid": 11,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939641.937,
+    "frame": 579,
+    "sid": 12,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939641.937,
+    "frame": 579,
+    "sid": 12,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939648.471,
+    "frame": 623,
+    "sid": 13,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939648.471,
+    "frame": 623,
+    "sid": 13,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939648.471,
+    "frame": 623,
+    "sid": 14,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939648.471,
+    "frame": 623,
+    "sid": 14,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939651.29,
+    "frame": 637,
+    "sid": 15,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939651.29,
+    "frame": 637,
+    "sid": 15,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939666.642,
+    "frame": 889,
+    "sid": 16,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939666.642,
+    "frame": 889,
+    "sid": 16,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939678.034,
+    "frame": 992,
+    "sid": 17,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939678.034,
+    "frame": 992,
+    "sid": 17,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939678.789,
+    "frame": 1015,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939678.789,
+    "frame": 1015,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939689.506,
+    "frame": 1102,
+    "sid": 19,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939689.506,
+    "frame": 1102,
+    "sid": 19,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939689.507,
+    "frame": 1102,
+    "sid": 20,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939689.507,
+    "frame": 1102,
+    "sid": 20,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939694.762,
+    "frame": 1142,
+    "sid": 21,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939694.762,
+    "frame": 1142,
+    "sid": 21,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939699.169,
+    "frame": 1180,
+    "sid": 22,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939699.169,
+    "frame": 1180,
+    "sid": 22,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939702.884,
+    "frame": 1210,
+    "sid": 23,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939702.884,
+    "frame": 1210,
+    "sid": 23,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939708.451,
+    "frame": 1347,
+    "sid": 24,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939708.451,
+    "frame": 1347,
+    "sid": 24,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939709.981,
+    "frame": 1374,
+    "sid": 25,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939709.981,
+    "frame": 1374,
+    "sid": 25,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939718.275,
+    "frame": 1527,
+    "sid": 26,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939718.275,
+    "frame": 1527,
+    "sid": 26,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939723.353,
+    "frame": 1663,
+    "sid": 27,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939723.353,
+    "frame": 1663,
+    "sid": 27,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939724.642,
+    "frame": 1703,
+    "sid": 28,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939724.642,
+    "frame": 1703,
+    "sid": 28,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939729.308,
+    "frame": 1766,
+    "sid": 29,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939729.308,
+    "frame": 1766,
+    "sid": 29,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939731.786,
+    "frame": 1786,
+    "sid": 30,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939731.786,
+    "frame": 1786,
+    "sid": 30,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939731.787,
+    "frame": 1786,
+    "sid": 31,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939731.787,
+    "frame": 1786,
+    "sid": 31,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939731.787,
+    "frame": 1786,
+    "sid": 32,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939731.787,
+    "frame": 1786,
+    "sid": 32,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939735.324,
+    "frame": 1811,
+    "sid": 33,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939735.324,
+    "frame": 1811,
+    "sid": 33,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939736.726,
+    "frame": 1847,
+    "sid": 34,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939736.726,
+    "frame": 1847,
+    "sid": 34,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939745.394,
+    "frame": 1922,
+    "sid": 35,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939745.394,
+    "frame": 1922,
+    "sid": 35,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939745.394,
+    "frame": 1922,
+    "sid": 36,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939745.394,
+    "frame": 1922,
+    "sid": 36,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939745.394,
+    "frame": 1922,
+    "sid": 37,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939745.394,
+    "frame": 1922,
+    "sid": 37,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939749.77,
+    "frame": 1955,
+    "sid": 38,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939749.77,
+    "frame": 1955,
+    "sid": 38,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939767.207,
+    "frame": 2314,
+    "sid": 39,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939767.207,
+    "frame": 2314,
+    "sid": 39,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939767.207,
+    "frame": 2314,
+    "sid": 40,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939767.207,
+    "frame": 2314,
+    "sid": 40,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939767.282,
+    "frame": 2316,
+    "sid": 41,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939767.282,
+    "frame": 2316,
+    "sid": 41,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939788.153,
+    "frame": 2601,
+    "sid": 42,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939788.153,
+    "frame": 2601,
+    "sid": 42,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939792.258,
+    "frame": 2643,
+    "sid": 43,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939792.258,
+    "frame": 2643,
+    "sid": 43,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939806.861,
+    "frame": 2771,
+    "sid": 44,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939806.861,
+    "frame": 2771,
+    "sid": 44,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939809.035,
+    "frame": 2816,
+    "sid": 45,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939809.035,
+    "frame": 2816,
+    "sid": 45,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939809.984,
+    "frame": 2821,
+    "sid": 46,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939809.984,
+    "frame": 2821,
+    "sid": 46,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.095,
+    "frame": 2865,
+    "sid": 47,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.095,
+    "frame": 2865,
+    "sid": 47,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.095,
+    "frame": 2865,
+    "sid": 48,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.095,
+    "frame": 2865,
+    "sid": 48,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.095,
+    "frame": 2865,
+    "sid": 49,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.095,
+    "frame": 2865,
+    "sid": 49,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.963,
+    "frame": 2869,
+    "sid": 50,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939817.963,
+    "frame": 2869,
+    "sid": 50,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939821.137,
+    "frame": 2891,
+    "sid": 51,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939821.137,
+    "frame": 2891,
+    "sid": 51,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939823.675,
+    "frame": 2904,
+    "sid": 52,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939823.675,
+    "frame": 2904,
+    "sid": 52,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939823.829,
+    "frame": 2909,
+    "sid": 53,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939823.829,
+    "frame": 2909,
+    "sid": 53,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939824.229,
+    "frame": 2910,
+    "sid": 54,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939824.229,
+    "frame": 2910,
+    "sid": 54,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939827.712,
+    "frame": 2956,
+    "sid": 55,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939827.712,
+    "frame": 2956,
+    "sid": 55,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766939831.705,
+    "frame": 3038,
+    "sid": 56,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766939831.705,
+    "frame": 3038,
+    "sid": 56,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  }
+]

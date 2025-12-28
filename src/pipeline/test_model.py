@@ -1,190 +1,112 @@
 import sys
-from pathlib import Path
 import cv2
-import math
-import os
+import time
+from pathlib import Path
 
-# --------------------------------------------------
-# Add src/ to PYTHONPATH
-# --------------------------------------------------
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from vision.detectors.yolov8_detector import YoloV8Tracker
-from core.player_registry import PlayerRegistry
-from ingest.video_reader import VideoReader
+from ultralytics import YOLO
+from jersey.smolvlm_reader import SmolVLMJerseyReader
+from jersey.jersey_vote_tracker import JerseyVoteTracker
 
 
-# --------------------------------------------------
-# Helper functions
-# --------------------------------------------------
-def center_of_box(box):
-    x1, y1, x2, y2 = box
-    return int((x1 + x2) / 2), int((y1 + y2) / 2)
+# ---------------- CONFIG ----------------
+VIDEO_PATH = r"C:\cricket-ai\data\samples\test3.mp4"
+MODEL_PATH = r"C:\cricket-ai\yolov8m_production4\weights\best.pt"
+DEVICE = 0
+FRAME_SKIP = 30  # 🔥 increased for FPS
 
 
-def infer_role_from_class(name):
-    if name in ["Batsman", "Bowler", "Player_Generic", "Wicket_Keeper"]:
-        return name
-    return "Ignore"
-
-
-# --------------------------------------------------
-# JERSEY VISIBILITY LOGIC (CRITICAL)
-# --------------------------------------------------
-def is_jersey_visible(player_crop):
-    h, w = player_crop.shape[:2]
-
-    # TEMP: very relaxed
-    if h < 80 or w < 40:
-        return False
-
-    return True
-
-
-
-def extract_jersey_regions(player_crop):
-    """
-    Extract multiple candidate jersey regions.
-    We do NOT decide here which is correct.
-    """
-    h, w = player_crop.shape[:2]
-    regions = []
-
-    # Candidate 1: upper torso (front-facing)
-    regions.append(
-        player_crop[
-            int(h * 0.30):int(h * 0.55),
-            int(w * 0.25):int(w * 0.75)
-        ]
-    )
-
-    # Candidate 2: upper-back (back-facing)
-    regions.append(
-        player_crop[
-            int(h * 0.20):int(h * 0.50),
-            int(w * 0.15):int(w * 0.85)
-        ]
-    )
-
-    return regions
-
-def is_good_region(crop):
-    if crop is None:
-        return False
-
-    h, w = crop.shape[:2]
-    if h < 30 or w < 40:
-        return False
-
-    # TEMP: no blur rejection
-    return True
-
-
-
-# --------------------------------------------------
-# MAIN
-# --------------------------------------------------
 def main():
-    video_path = r"C:\cricket-ai\data\samples\test3.mp4"
-    model_path = r"C:\cricket player train\cricket-ai\yolov8m_production4\weights\best.pt"
+    cap = cv2.VideoCapture(VIDEO_PATH)
+    if not cap.isOpened():
+        print("❌ Cannot open video")
+        return
 
-    tracker = YoloV8Tracker(model_path)
-    registry = PlayerRegistry()
+    model = YOLO(MODEL_PATH)
 
-    reader = VideoReader(video_path)
-    frame_id = 0
+    jersey_reader = SmolVLMJerseyReader()
+    jersey_tracker = JerseyVoteTracker()
 
-    # 🔥 ABSOLUTE PATH (PROJECT ROOT)
-    PROJECT_ROOT = Path(__file__).resolve().parents[2]
-    JERSEY_OUT_DIR = PROJECT_ROOT / "jersey_crops"
-    JERSEY_OUT_DIR.mkdir(parents=True, exist_ok=True)
+    frame_count = 0
+    t0 = time.time()
 
-    print("Jersey crops will be saved to:", JERSEY_OUT_DIR)
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
 
-    JERSEY_SAMPLE_INTERVAL = 1  # opportunistic sampling
+        frame_count += 1
+        jersey_processed_this_frame = False
 
-    for frame in reader:
-        frame_id += 1
-        detections = tracker.track(frame, conf=0.3)
+        results = model.track(
+            frame,
+            persist=True,
+            conf=0.4,
+            iou=0.5,
+            device=DEVICE,
+            verbose=False
+        )[0]
 
-        for det in detections:
-            raw_id = det["track_id"]
-            box = det["box"]
-            role = infer_role_from_class(det["name"])
+        if results.boxes is not None:
+            for box in results.boxes:
+                if box.id is None:
+                    continue
 
-            if role == "Ignore":
-                continue
+                sid = int(box.id.item())
+                x1, y1, x2, y2 = map(int, box.xyxy[0])
 
-            x1, y1, x2, y2 = map(int, box)
-            player_crop = frame[y1:y2, x1:x2]
+                # Draw player box
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                cv2.putText(frame, f"SID {sid}", (x1, y1 - 30),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
-            if player_crop.size == 0:
-                continue
+                # Already locked
+                if jersey_tracker.is_locked(sid):
+                    jersey = jersey_tracker.get_locked(sid)["jersey"]
+                    cv2.putText(frame, f"#{jersey}", (x1, y1 - 10),
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+                    continue
 
-            center = center_of_box(box)
+                # 🔥 performance guards
+                if jersey_processed_this_frame:
+                    continue
+                if frame_count % FRAME_SKIP != 0:
+                    continue
 
-            stable_id = registry.resolve_id(
-                raw_id=raw_id,
-                center=center,
-                role=role,
-                frame_id=frame_id
-            )
+                # Jersey crop
+                h = y2 - y1
+                w = x2 - x1
 
-            registry.update(stable_id, center)
+                cy1 = int(y1 + 0.25 * h)
+                cy2 = int(y1 + 0.65 * h)
+                cx1 = int(x1 + 0.2 * w)
+                cx2 = int(x2 - 0.2 * w)
 
-            # --------------------------------------
-            # JERSEY REGION SAMPLING (CORRECT WAY)
-            # --------------------------------------
-            if frame_id % JERSEY_SAMPLE_INTERVAL == 0:
+                crop = frame[cy1:cy2, cx1:cx2]
+                if crop.size == 0:
+                    continue
 
-                jersey_regions = extract_jersey_regions(player_crop)
+                number, _ = jersey_reader.read_jersey_number(crop)
+                jersey_tracker.add_vote(sid, number)
+                jersey_processed_this_frame = True
 
-        sid_dir = JERSEY_OUT_DIR / f"SID_{stable_id}"
-        sid_dir.mkdir(parents=True, exist_ok=True)
+                if jersey_tracker.is_locked(sid):
+                    locked = jersey_tracker.get_locked(sid)
+                    print(f"🔒 LOCKED → SID {sid}: #{locked['jersey']} "
+                          f"(confidence {locked['confidence']})")
 
-        for idx, region in enumerate(jersey_regions):
-            if region is None or region.size == 0:
-                continue
+        # FPS
+        fps = frame_count / (time.time() - t0 + 1e-6)
+        cv2.putText(frame, f"FPS: {fps:.1f}", (10, 25),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 0), 2)
 
-            # Save ALL regions (debug)
-            debug_path = sid_dir / f"DEBUG_frame_{frame_id}_r{idx}.jpg"
-            cv2.imwrite(str(debug_path), region)
-
-            # Now apply (relaxed) quality check
-            if is_good_region(region):
-                registry.add_jersey_crop(stable_id, region)
-
-                good_path = sid_dir / f"GOOD_frame_{frame_id}_r{idx}.jpg"
-                cv2.imwrite(str(good_path), region)
-
-            # --------------------------------------
-            # CLEAN VISUALIZATION
-            # --------------------------------------
-            label = f"SID {stable_id} | {role}"
-            cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            cv2.putText(
-                frame,
-                label,
-                (x1, y1 - 8),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.6,
-                (0, 255, 0),
-                2
-            )
-
-        cv2.imshow("Cricket AI – Jersey Crop Collection (FIXED)", frame)
+        cv2.imshow("Cricket AI", frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
-    reader.release()
+    cap.release()
     cv2.destroyAllWindows()
-
-    # ------------------------------------------
-    # SUMMARY
-    # ------------------------------------------
-    print("\nJERSEY CROP SUMMARY")
-    for sid, player in registry.players.items():
-        print(f"SID {sid}: {len(player['jersey_crops'])} jersey regions collected")
 
 
 if __name__ == "__main__":

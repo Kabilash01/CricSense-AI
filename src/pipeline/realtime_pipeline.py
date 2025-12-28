@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from ingest.video_reader import VideoReader
 from ui.overlay import draw_boxes
 from vision.detectors.yolov8_detector import YoloV8Detector
+from core.event_timeline import EventTimeline
 
 def draw_labeled_boxes(frame, detections):
     for d in detections:
