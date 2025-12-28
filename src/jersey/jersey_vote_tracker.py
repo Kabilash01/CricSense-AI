@@ -1,20 +1,21 @@
 from collections import Counter
 
+
 class JerseyVoteTracker:
     """
-    Tracks jersey number predictions per Stable ID (SID),
-    applies temporal voting, and locks jersey numbers.
+    Cricket-aware jersey number temporal validator + locker.
     """
 
     def __init__(self, min_votes=3, min_confidence=0.6):
         self.min_votes = min_votes
         self.min_confidence = min_confidence
 
-        # sid -> Counter({jersey_number: count})
-        self.votes = {}
+        self.votes = {}      # sid -> Counter
+        self.locked = {}     # sid -> locked info
 
-        # sid -> locked jersey number
-        self.locked = {}
+    # --------------------------------------------------
+    # PUBLIC API
+    # --------------------------------------------------
 
     def is_locked(self, sid):
         return sid in self.locked
@@ -24,22 +25,67 @@ class JerseyVoteTracker:
 
     def add_vote(self, sid, jersey_number):
         """
-        Add a jersey prediction for a SID.
-        jersey_number can be str or None.
+        Adds a jersey prediction AFTER validation.
         """
 
         if self.is_locked(sid):
-            return  # already locked, ignore further votes
+            return
+
+        jersey_number = self._validate(jersey_number, sid)
 
         if jersey_number is None:
-            return  # ignore empty predictions
+            return
 
         if sid not in self.votes:
             self.votes[sid] = Counter()
 
         self.votes[sid][jersey_number] += 1
-
         self._try_lock(sid)
+
+    # --------------------------------------------------
+    # VALIDATION LOGIC (CRITICAL)
+    # --------------------------------------------------
+
+    def _validate(self, jersey, sid):
+        """
+        Returns validated jersey number or None.
+        """
+
+        if jersey is None:
+            return None
+
+        if not jersey.isdigit():
+            return None
+
+        jersey_int = int(jersey)
+
+        # ❌ Rule 1: Reject impossible numbers
+        if jersey_int == 0:
+            return None
+
+        # ✅ Rule 2: Accept strong two-digit jerseys
+        if 10 <= jersey_int <= 99:
+            return jersey
+
+        # ⚠️ Rule 3: Single-digit jerseys (rare)
+        if 1 <= jersey_int <= 9:
+            votes = self.votes.get(sid, Counter())
+            count = votes.get(jersey, 0)
+            total = sum(votes.values()) + 1
+
+            confidence = count / total if total > 0 else 0
+
+            # Allow only after strong evidence
+            if count >= 5 and confidence >= 0.7:
+                return jersey
+            else:
+                return None
+
+        return None
+
+    # --------------------------------------------------
+    # LOCKING LOGIC
+    # --------------------------------------------------
 
     def _try_lock(self, sid):
         counter = self.votes.get(sid)
@@ -57,6 +103,3 @@ class JerseyVoteTracker:
                 "votes": dict(counter),
                 "confidence": round(confidence, 2)
             }
-
-    def summary(self):
-        return self.locked
