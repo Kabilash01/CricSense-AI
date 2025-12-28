@@ -1,6 +1,6 @@
 [
   {
-    "ts": 1766939595.181,
+    "ts": 1766945435.749,
     "frame": 1,
     "sid": 1,
     "role": "Bowler",
@@ -9,7 +9,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939595.181,
+    "ts": 1766945435.749,
     "frame": 1,
     "sid": 1,
     "role": "Bowler",
@@ -18,7 +18,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939599.32,
+    "ts": 1766945436.83,
     "frame": 26,
     "sid": 2,
     "role": "Batsman",
@@ -27,7 +27,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939599.32,
+    "ts": 1766945436.83,
     "frame": 26,
     "sid": 2,
     "role": "Batsman",
@@ -36,7 +36,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939599.32,
+    "ts": 1766945436.831,
     "frame": 26,
     "sid": 3,
     "role": "Bowler",
@@ -45,7 +45,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939599.32,
+    "ts": 1766945436.831,
     "frame": 26,
     "sid": 3,
     "role": "Bowler",
@@ -54,7 +54,502 @@
     "meta": {}
   },
   {
-    "ts": 1766939603.863,
+    "ts": 1766945437.138,
+    "frame": 33,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.85
+    }
+  },
+  {
+    "ts": 1766945437.138,
+    "frame": 33,
+    "sid": 1,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945437.175,
+    "frame": 34,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.26
+    }
+  },
+  {
+    "ts": 1766945437.208,
+    "frame": 35,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.85
+    }
+  },
+  {
+    "ts": 1766945437.238,
+    "frame": 36,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.2
+    }
+  },
+  {
+    "ts": 1766945437.273,
+    "frame": 37,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.68
+    }
+  },
+  {
+    "ts": 1766945437.32,
+    "frame": 38,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.15
+    }
+  },
+  {
+    "ts": 1766945437.363,
+    "frame": 39,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 31.91
+    }
+  },
+  {
+    "ts": 1766945437.363,
+    "frame": 39,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 31.91
+    }
+  },
+  {
+    "ts": 1766945437.397,
+    "frame": 40,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 38.28
+    }
+  },
+  {
+    "ts": 1766945437.397,
+    "frame": 40,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 38.28
+    }
+  },
+  {
+    "ts": 1766945437.426,
+    "frame": 41,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 41.05
+    }
+  },
+  {
+    "ts": 1766945437.426,
+    "frame": 41,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 41.05
+    }
+  },
+  {
+    "ts": 1766945437.457,
+    "frame": 42,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.61
+    }
+  },
+  {
+    "ts": 1766945437.457,
+    "frame": 42,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 51.61
+    }
+  },
+  {
+    "ts": 1766945437.499,
+    "frame": 43,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 73.5
+    }
+  },
+  {
+    "ts": 1766945437.499,
+    "frame": 43,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 73.5
+    }
+  },
+  {
+    "ts": 1766945437.534,
+    "frame": 44,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 85.98
+    }
+  },
+  {
+    "ts": 1766945437.534,
+    "frame": 44,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 85.98
+    }
+  },
+  {
+    "ts": 1766945437.534,
+    "frame": 44,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 28.44
+    }
+  },
+  {
+    "ts": 1766945437.568,
+    "frame": 45,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 99.2
+    }
+  },
+  {
+    "ts": 1766945437.568,
+    "frame": 45,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 99.2
+    }
+  },
+  {
+    "ts": 1766945437.568,
+    "frame": 45,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 45.61
+    }
+  },
+  {
+    "ts": 1766945437.568,
+    "frame": 45,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 45.61
+    }
+  },
+  {
+    "ts": 1766945437.607,
+    "frame": 46,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 115.31
+    }
+  },
+  {
+    "ts": 1766945437.607,
+    "frame": 46,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 115.31
+    }
+  },
+  {
+    "ts": 1766945437.607,
+    "frame": 46,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 64.94
+    }
+  },
+  {
+    "ts": 1766945437.607,
+    "frame": 46,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 64.94
+    }
+  },
+  {
+    "ts": 1766945437.655,
+    "frame": 47,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 114.21
+    }
+  },
+  {
+    "ts": 1766945437.655,
+    "frame": 47,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 114.21
+    }
+  },
+  {
+    "ts": 1766945437.655,
+    "frame": 47,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 74.33
+    }
+  },
+  {
+    "ts": 1766945437.655,
+    "frame": 47,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 74.33
+    }
+  },
+  {
+    "ts": 1766945437.691,
+    "frame": 48,
+    "sid": 1,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 121.83
+    }
+  },
+  {
+    "ts": 1766945437.691,
+    "frame": 48,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 83.38
+    }
+  },
+  {
+    "ts": 1766945437.721,
+    "frame": 49,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 107.67
+    }
+  },
+  {
+    "ts": 1766945437.752,
+    "frame": 50,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 116.84
+    }
+  },
+  {
+    "ts": 1766945437.784,
+    "frame": 51,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 129.29
+    }
+  },
+  {
+    "ts": 1766945437.814,
+    "frame": 52,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 145.6
+    }
+  },
+  {
+    "ts": 1766945437.855,
+    "frame": 53,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 137.93
+    }
+  },
+  {
+    "ts": 1766945437.896,
+    "frame": 54,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 109.12
+    }
+  },
+  {
+    "ts": 1766945437.933,
+    "frame": 55,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 89.2
+    }
+  },
+  {
+    "ts": 1766945437.971,
+    "frame": 56,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.28
+    }
+  },
+  {
+    "ts": 1766945438.01,
+    "frame": 57,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 66.22
+    }
+  },
+  {
+    "ts": 1766945438.048,
+    "frame": 58,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 90.09
+    }
+  },
+  {
+    "ts": 1766945438.08,
+    "frame": 59,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 100.17
+    }
+  },
+  {
+    "ts": 1766945438.159,
     "frame": 61,
     "sid": 4,
     "role": "Bowler",
@@ -63,7 +558,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939603.863,
+    "ts": 1766945438.159,
     "frame": 61,
     "sid": 4,
     "role": "Bowler",
@@ -72,7 +567,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939603.898,
+    "ts": 1766945438.19,
     "frame": 62,
     "sid": 5,
     "role": "Batsman",
@@ -81,7 +576,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939603.898,
+    "ts": 1766945438.19,
     "frame": 62,
     "sid": 5,
     "role": "Batsman",
@@ -90,7 +585,84 @@
     "meta": {}
   },
   {
-    "ts": 1766939605.7,
+    "ts": 1766945438.378,
+    "frame": 67,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 80.05
+    }
+  },
+  {
+    "ts": 1766945438.422,
+    "frame": 68,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 73.55
+    }
+  },
+  {
+    "ts": 1766945438.456,
+    "frame": 69,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 63.06
+    }
+  },
+  {
+    "ts": 1766945438.488,
+    "frame": 70,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 64.51
+    }
+  },
+  {
+    "ts": 1766945438.543,
+    "frame": 71,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 56.3
+    }
+  },
+  {
+    "ts": 1766945438.592,
+    "frame": 72,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.26
+    }
+  },
+  {
+    "ts": 1766945438.643,
+    "frame": 73,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 50.33
+    }
+  },
+  {
+    "ts": 1766945438.643,
     "frame": 73,
     "sid": 6,
     "role": "Player_Generic",
@@ -99,7 +671,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939605.7,
+    "ts": 1766945438.643,
     "frame": 73,
     "sid": 6,
     "role": "Player_Generic",
@@ -108,7 +680,139 @@
     "meta": {}
   },
   {
-    "ts": 1766939608.369,
+    "ts": 1766945438.69,
+    "frame": 74,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 43.32
+    }
+  },
+  {
+    "ts": 1766945438.69,
+    "frame": 74,
+    "sid": 5,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945438.69,
+    "frame": 74,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 43.32
+    }
+  },
+  {
+    "ts": 1766945438.74,
+    "frame": 75,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 35.69
+    }
+  },
+  {
+    "ts": 1766945438.74,
+    "frame": 75,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 35.69
+    }
+  },
+  {
+    "ts": 1766945438.782,
+    "frame": 76,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 35.13
+    }
+  },
+  {
+    "ts": 1766945438.782,
+    "frame": 76,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 35.13
+    }
+  },
+  {
+    "ts": 1766945438.84,
+    "frame": 77,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 30.07
+    }
+  },
+  {
+    "ts": 1766945438.84,
+    "frame": 77,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 30.07
+    }
+  },
+  {
+    "ts": 1766945438.873,
+    "frame": 78,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.17
+    }
+  },
+  {
+    "ts": 1766945438.908,
+    "frame": 79,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.17
+    }
+  },
+  {
+    "ts": 1766945438.949,
+    "frame": 80,
+    "sid": 5,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.02
+    }
+  },
+  {
+    "ts": 1766945439.37,
     "frame": 91,
     "sid": 7,
     "role": "Player_Generic",
@@ -117,7 +821,7 @@
     "meta": {}
   },
   {
-    "ts": 1766939608.369,
+    "ts": 1766945439.37,
     "frame": 91,
     "sid": 7,
     "role": "Player_Generic",
@@ -126,62 +830,1833 @@
     "meta": {}
   },
   {
-    "ts": 1766939619.531,
-    "frame": 224,
+    "ts": 1766945439.629,
+    "frame": 97,
     "sid": 8,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939619.531,
-    "frame": 224,
-    "sid": 8,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939622.383,
-    "frame": 299,
-    "sid": 9,
     "role": "Wicket_Keeper",
     "jersey": null,
     "event": "PLAYER_APPEAR",
     "meta": {}
   },
   {
-    "ts": 1766939622.383,
-    "frame": 299,
-    "sid": 9,
+    "ts": 1766945439.629,
+    "frame": 97,
+    "sid": 8,
     "role": "Wicket_Keeper",
     "jersey": null,
     "event": "ROLE_CONFIRMED",
     "meta": {}
   },
   {
-    "ts": 1766939630.821,
-    "frame": 502,
-    "sid": 10,
+    "ts": 1766945439.841,
+    "frame": 102,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 96.21
+    }
+  },
+  {
+    "ts": 1766945439.878,
+    "frame": 103,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 79.85
+    }
+  },
+  {
+    "ts": 1766945439.924,
+    "frame": 104,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 56.86
+    }
+  },
+  {
+    "ts": 1766945440.001,
+    "frame": 106,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.0
+    }
+  },
+  {
+    "ts": 1766945440.048,
+    "frame": 107,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 45.89
+    }
+  },
+  {
+    "ts": 1766945440.095,
+    "frame": 108,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 68.12
+    }
+  },
+  {
+    "ts": 1766945440.12,
+    "frame": 109,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 90.09
+    }
+  },
+  {
+    "ts": 1766945440.152,
+    "frame": 110,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 111.31
+    }
+  },
+  {
+    "ts": 1766945440.182,
+    "frame": 111,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 116.93
+    }
+  },
+  {
+    "ts": 1766945440.212,
+    "frame": 112,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 89.84
+    }
+  },
+  {
+    "ts": 1766945440.243,
+    "frame": 113,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 59.03
+    }
+  },
+  {
+    "ts": 1766945440.273,
+    "frame": 114,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 23.77
+    }
+  },
+  {
+    "ts": 1766945440.304,
+    "frame": 115,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 31.58
+    }
+  },
+  {
+    "ts": 1766945440.304,
+    "frame": 115,
+    "sid": 2,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945440.304,
+    "frame": 115,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 31.58
+    }
+  },
+  {
+    "ts": 1766945440.343,
+    "frame": 116,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 49.03
+    }
+  },
+  {
+    "ts": 1766945440.343,
+    "frame": 116,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 49.03
+    }
+  },
+  {
+    "ts": 1766945440.381,
+    "frame": 117,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 43.66
+    }
+  },
+  {
+    "ts": 1766945440.381,
+    "frame": 117,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 43.66
+    }
+  },
+  {
+    "ts": 1766945440.414,
+    "frame": 118,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 48.7
+    }
+  },
+  {
+    "ts": 1766945440.414,
+    "frame": 118,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 48.7
+    }
+  },
+  {
+    "ts": 1766945440.452,
+    "frame": 119,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 61.98
+    }
+  },
+  {
+    "ts": 1766945440.452,
+    "frame": 119,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 61.98
+    }
+  },
+  {
+    "ts": 1766945440.499,
+    "frame": 120,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 73.11
+    }
+  },
+  {
+    "ts": 1766945440.499,
+    "frame": 120,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 73.11
+    }
+  },
+  {
+    "ts": 1766945440.545,
+    "frame": 121,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 90.55
+    }
+  },
+  {
+    "ts": 1766945440.545,
+    "frame": 121,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 90.55
+    }
+  },
+  {
+    "ts": 1766945440.584,
+    "frame": 122,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 114.42
+    }
+  },
+  {
+    "ts": 1766945440.584,
+    "frame": 122,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 114.42
+    }
+  },
+  {
+    "ts": 1766945440.616,
+    "frame": 123,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 109.84
+    }
+  },
+  {
+    "ts": 1766945440.616,
+    "frame": 123,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 109.84
+    }
+  },
+  {
+    "ts": 1766945440.647,
+    "frame": 124,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 92.07
+    }
+  },
+  {
+    "ts": 1766945440.647,
+    "frame": 124,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 92.07
+    }
+  },
+  {
+    "ts": 1766945440.68,
+    "frame": 125,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 72.01
+    }
+  },
+  {
+    "ts": 1766945440.68,
+    "frame": 125,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 72.01
+    }
+  },
+  {
+    "ts": 1766945440.716,
+    "frame": 126,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 47.04
+    }
+  },
+  {
+    "ts": 1766945440.716,
+    "frame": 126,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 47.04
+    }
+  },
+  {
+    "ts": 1766945440.826,
+    "frame": 129,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 24.19
+    }
+  },
+  {
+    "ts": 1766945440.872,
+    "frame": 130,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 20.62
+    }
+  },
+  {
+    "ts": 1766945440.918,
+    "frame": 131,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.54
+    }
+  },
+  {
+    "ts": 1766945441.036,
+    "frame": 134,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.02
+    }
+  },
+  {
+    "ts": 1766945441.066,
+    "frame": 135,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 38.83
+    }
+  },
+  {
+    "ts": 1766945441.097,
+    "frame": 136,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 53.85
+    }
+  },
+  {
+    "ts": 1766945441.13,
+    "frame": 137,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.2
+    }
+  },
+  {
+    "ts": 1766945441.169,
+    "frame": 138,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 72.69
+    }
+  },
+  {
+    "ts": 1766945441.207,
+    "frame": 139,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.16
+    }
+  },
+  {
+    "ts": 1766945441.239,
+    "frame": 140,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 34.06
+    }
+  },
+  {
+    "ts": 1766945441.317,
+    "frame": 142,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.43
+    }
+  },
+  {
+    "ts": 1766945441.426,
+    "frame": 145,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.71
+    }
+  },
+  {
+    "ts": 1766945441.465,
+    "frame": 146,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 20.88
+    }
+  },
+  {
+    "ts": 1766945441.51,
+    "frame": 147,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.61
+    }
+  },
+  {
+    "ts": 1766945441.558,
+    "frame": 148,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 28.18
+    }
+  },
+  {
+    "ts": 1766945441.605,
+    "frame": 149,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.96
+    }
+  },
+  {
+    "ts": 1766945445.703,
+    "frame": 224,
+    "sid": 9,
     "role": "Bowler",
     "jersey": null,
     "event": "PLAYER_APPEAR",
     "meta": {}
   },
   {
-    "ts": 1766939630.821,
-    "frame": 502,
-    "sid": 10,
+    "ts": 1766945445.703,
+    "frame": 224,
+    "sid": 9,
     "role": "Bowler",
     "jersey": null,
     "event": "ROLE_CONFIRMED",
     "meta": {}
   },
   {
-    "ts": 1766939641.937,
-    "frame": 579,
+    "ts": 1766945446.392,
+    "frame": 246,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 113.6
+    }
+  },
+  {
+    "ts": 1766945446.392,
+    "frame": 246,
+    "sid": 2,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945446.392,
+    "frame": 246,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 113.6
+    }
+  },
+  {
+    "ts": 1766945446.424,
+    "frame": 247,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 141.15
+    }
+  },
+  {
+    "ts": 1766945446.424,
+    "frame": 247,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 141.15
+    }
+  },
+  {
+    "ts": 1766945446.455,
+    "frame": 248,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 160.95
+    }
+  },
+  {
+    "ts": 1766945446.455,
+    "frame": 248,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 160.95
+    }
+  },
+  {
+    "ts": 1766945446.483,
+    "frame": 249,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 185.13
+    }
+  },
+  {
+    "ts": 1766945446.483,
+    "frame": 249,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 185.13
+    }
+  },
+  {
+    "ts": 1766945446.515,
+    "frame": 250,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 201.07
+    }
+  },
+  {
+    "ts": 1766945446.515,
+    "frame": 250,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 201.07
+    }
+  },
+  {
+    "ts": 1766945446.549,
+    "frame": 251,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 48.85
+    }
+  },
+  {
+    "ts": 1766945446.549,
+    "frame": 251,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 48.85
+    }
+  },
+  {
+    "ts": 1766945446.577,
+    "frame": 252,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.24
+    }
+  },
+  {
+    "ts": 1766945446.685,
+    "frame": 255,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 33.38
+    }
+  },
+  {
+    "ts": 1766945446.685,
+    "frame": 255,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 33.38
+    }
+  },
+  {
+    "ts": 1766945446.72,
+    "frame": 256,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 49.0
+    }
+  },
+  {
+    "ts": 1766945446.72,
+    "frame": 256,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 49.0
+    }
+  },
+  {
+    "ts": 1766945446.749,
+    "frame": 257,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.02
+    }
+  },
+  {
+    "ts": 1766945446.843,
+    "frame": 260,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.09
+    }
+  },
+  {
+    "ts": 1766945446.843,
+    "frame": 260,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 51.09
+    }
+  },
+  {
+    "ts": 1766945446.878,
+    "frame": 261,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 84.05
+    }
+  },
+  {
+    "ts": 1766945446.907,
+    "frame": 262,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 39.0
+    }
+  },
+  {
+    "ts": 1766945446.937,
+    "frame": 263,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.56
+    }
+  },
+  {
+    "ts": 1766945446.968,
+    "frame": 264,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.3
+    }
+  },
+  {
+    "ts": 1766945447.038,
+    "frame": 266,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 27.2
+    }
+  },
+  {
+    "ts": 1766945447.138,
+    "frame": 269,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.03
+    }
+  },
+  {
+    "ts": 1766945447.636,
+    "frame": 285,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.03
+    }
+  },
+  {
+    "ts": 1766945447.669,
+    "frame": 286,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 20.02
+    }
+  },
+  {
+    "ts": 1766945448.107,
+    "frame": 299,
+    "sid": 10,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766945448.107,
+    "frame": 299,
+    "sid": 10,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766945449.042,
+    "frame": 327,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 30.02
+    }
+  },
+  {
+    "ts": 1766945449.042,
+    "frame": 327,
+    "sid": 2,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945449.042,
+    "frame": 327,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 30.02
+    }
+  },
+  {
+    "ts": 1766945449.072,
+    "frame": 328,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 27.02
+    }
+  },
+  {
+    "ts": 1766945449.099,
+    "frame": 329,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 28.02
+    }
+  },
+  {
+    "ts": 1766945449.137,
+    "frame": 330,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.02
+    }
+  },
+  {
+    "ts": 1766945449.967,
+    "frame": 353,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.0
+    }
+  },
+  {
+    "ts": 1766945450.005,
+    "frame": 354,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.1
+    }
+  },
+  {
+    "ts": 1766945450.203,
+    "frame": 360,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.97
+    }
+  },
+  {
+    "ts": 1766945450.358,
+    "frame": 364,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.0
+    }
+  },
+  {
+    "ts": 1766945450.404,
+    "frame": 365,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.02
+    }
+  },
+  {
+    "ts": 1766945450.477,
+    "frame": 367,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 50.01
+    }
+  },
+  {
+    "ts": 1766945450.514,
+    "frame": 368,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 24.02
+    }
+  },
+  {
+    "ts": 1766945450.514,
+    "frame": 368,
+    "sid": 2,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945450.663,
+    "frame": 372,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 30.02
+    }
+  },
+  {
+    "ts": 1766945450.663,
+    "frame": 372,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 30.02
+    }
+  },
+  {
+    "ts": 1766945450.733,
+    "frame": 374,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 38.0
+    }
+  },
+  {
+    "ts": 1766945450.733,
+    "frame": 374,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 38.0
+    }
+  },
+  {
+    "ts": 1766945450.811,
+    "frame": 376,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.5
+    }
+  },
+  {
+    "ts": 1766945450.811,
+    "frame": 376,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 36.5
+    }
+  },
+  {
+    "ts": 1766945450.88,
+    "frame": 378,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 42.11
+    }
+  },
+  {
+    "ts": 1766945450.88,
+    "frame": 378,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 42.11
+    }
+  },
+  {
+    "ts": 1766945450.912,
+    "frame": 379,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 24.08
+    }
+  },
+  {
+    "ts": 1766945450.98,
+    "frame": 381,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.15
+    }
+  },
+  {
+    "ts": 1766945451.081,
+    "frame": 384,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 27.0
+    }
+  },
+  {
+    "ts": 1766945451.123,
+    "frame": 385,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 31.0
+    }
+  },
+  {
+    "ts": 1766945451.159,
+    "frame": 386,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 23.19
+    }
+  },
+  {
+    "ts": 1766945451.697,
+    "frame": 401,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 30.07
+    }
+  },
+  {
+    "ts": 1766945451.736,
+    "frame": 402,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 69.18
+    }
+  },
+  {
+    "ts": 1766945451.767,
+    "frame": 403,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 99.32
+    }
+  },
+  {
+    "ts": 1766945451.798,
+    "frame": 404,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 55.79
+    }
+  },
+  {
+    "ts": 1766945451.837,
+    "frame": 405,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 37.12
+    }
+  },
+  {
+    "ts": 1766945451.877,
+    "frame": 406,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 23.54
+    }
+  },
+  {
+    "ts": 1766945451.915,
+    "frame": 407,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 48.75
+    }
+  },
+  {
+    "ts": 1766945451.964,
+    "frame": 408,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 72.12
+    }
+  },
+  {
+    "ts": 1766945452.0,
+    "frame": 409,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 34.99
+    }
+  },
+  {
+    "ts": 1766945452.0,
+    "frame": 409,
+    "sid": 2,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945452.0,
+    "frame": 409,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 34.99
+    }
+  },
+  {
+    "ts": 1766945452.037,
+    "frame": 410,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.38
+    }
+  },
+  {
+    "ts": 1766945452.095,
+    "frame": 412,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.96
+    }
+  },
+  {
+    "ts": 1766945452.172,
+    "frame": 414,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.79
+    }
+  },
+  {
+    "ts": 1766945452.211,
+    "frame": 415,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.38
+    }
+  },
+  {
+    "ts": 1766945452.284,
+    "frame": 417,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.95
+    }
+  },
+  {
+    "ts": 1766945452.586,
+    "frame": 425,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.93
+    }
+  },
+  {
+    "ts": 1766945452.632,
+    "frame": 426,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 37.48
+    }
+  },
+  {
+    "ts": 1766945452.684,
+    "frame": 427,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 38.12
+    }
+  },
+  {
+    "ts": 1766945452.718,
+    "frame": 428,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 44.1
+    }
+  },
+  {
+    "ts": 1766945452.756,
+    "frame": 429,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 48.51
+    }
+  },
+  {
+    "ts": 1766945452.805,
+    "frame": 430,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 40.2
+    }
+  },
+  {
+    "ts": 1766945452.843,
+    "frame": 431,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.53
+    }
+  },
+  {
+    "ts": 1766945452.873,
+    "frame": 432,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 53.49
+    }
+  },
+  {
+    "ts": 1766945452.905,
+    "frame": 433,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 61.27
+    }
+  },
+  {
+    "ts": 1766945452.933,
+    "frame": 434,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 56.3
+    }
+  },
+  {
+    "ts": 1766945452.975,
+    "frame": 435,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 55.04
+    }
+  },
+  {
+    "ts": 1766945453.025,
+    "frame": 436,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 59.44
+    }
+  },
+  {
+    "ts": 1766945453.058,
+    "frame": 437,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 40.46
+    }
+  },
+  {
+    "ts": 1766945453.095,
+    "frame": 438,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.5
+    }
+  },
+  {
+    "ts": 1766945453.136,
+    "frame": 439,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 39.81
+    }
+  },
+  {
+    "ts": 1766945453.176,
+    "frame": 440,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.07
+    }
+  },
+  {
+    "ts": 1766945453.217,
+    "frame": 441,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 27.2
+    }
+  },
+  {
+    "ts": 1766945453.247,
+    "frame": 442,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.56
+    }
+  },
+  {
+    "ts": 1766945453.37,
+    "frame": 445,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.83
+    }
+  },
+  {
+    "ts": 1766945453.401,
+    "frame": 446,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 39.56
+    }
+  },
+  {
+    "ts": 1766945453.438,
+    "frame": 447,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.06
+    }
+  },
+  {
+    "ts": 1766945453.465,
+    "frame": 448,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 31.62
+    }
+  },
+  {
+    "ts": 1766945453.533,
+    "frame": 450,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.68
+    }
+  },
+  {
+    "ts": 1766945453.533,
+    "frame": 450,
+    "sid": 2,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945453.574,
+    "frame": 451,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.57
+    }
+  },
+  {
+    "ts": 1766945453.613,
+    "frame": 452,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.17
+    }
+  },
+  {
+    "ts": 1766945453.656,
+    "frame": 453,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.71
+    }
+  },
+  {
+    "ts": 1766945453.761,
+    "frame": 456,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.31
+    }
+  },
+  {
+    "ts": 1766945453.793,
+    "frame": 457,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.0
+    }
+  },
+  {
+    "ts": 1766945453.822,
+    "frame": 458,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 30.59
+    }
+  },
+  {
+    "ts": 1766945453.822,
+    "frame": 458,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 30.59
+    }
+  },
+  {
+    "ts": 1766945453.856,
+    "frame": 459,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.8
+    }
+  },
+  {
+    "ts": 1766945453.883,
+    "frame": 460,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.31
+    }
+  },
+  {
+    "ts": 1766945454.64,
+    "frame": 480,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 20.4
+    }
+  },
+  {
+    "ts": 1766945454.683,
+    "frame": 481,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 24.08
+    }
+  },
+  {
+    "ts": 1766945454.724,
+    "frame": 482,
+    "sid": 2,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.02
+    }
+  },
+  {
+    "ts": 1766945455.454,
+    "frame": 502,
     "sid": 11,
     "role": "Bowler",
     "jersey": null,
@@ -189,8 +2664,8 @@
     "meta": {}
   },
   {
-    "ts": 1766939641.937,
-    "frame": 579,
+    "ts": 1766945455.454,
+    "frame": 502,
     "sid": 11,
     "role": "Bowler",
     "jersey": null,
@@ -198,98 +2673,538 @@
     "meta": {}
   },
   {
-    "ts": 1766939641.937,
+    "ts": 1766945457.928,
     "frame": 579,
     "sid": 12,
-    "role": "Batsman",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939641.937,
-    "frame": 579,
-    "sid": 12,
-    "role": "Batsman",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939648.471,
-    "frame": 623,
-    "sid": 13,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939648.471,
-    "frame": 623,
-    "sid": 13,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939648.471,
-    "frame": 623,
-    "sid": 14,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939648.471,
-    "frame": 623,
-    "sid": 14,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939651.29,
-    "frame": 637,
-    "sid": 15,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939651.29,
-    "frame": 637,
-    "sid": 15,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939666.642,
-    "frame": 889,
-    "sid": 16,
     "role": "Bowler",
     "jersey": null,
     "event": "PLAYER_APPEAR",
     "meta": {}
   },
   {
-    "ts": 1766939666.642,
-    "frame": 889,
-    "sid": 16,
+    "ts": 1766945457.928,
+    "frame": 579,
+    "sid": 12,
     "role": "Bowler",
     "jersey": null,
     "event": "ROLE_CONFIRMED",
     "meta": {}
   },
   {
-    "ts": 1766939678.034,
-    "frame": 992,
+    "ts": 1766945457.928,
+    "frame": 579,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766945457.928,
+    "frame": 579,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766945457.928,
+    "frame": 579,
+    "sid": 14,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766945457.928,
+    "frame": 579,
+    "sid": 14,
+    "role": "Wicket_Keeper",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766945458.071,
+    "frame": 583,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.93
+    }
+  },
+  {
+    "ts": 1766945458.071,
+    "frame": 583,
+    "sid": 11,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945458.227,
+    "frame": 588,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.38
+    }
+  },
+  {
+    "ts": 1766945458.257,
+    "frame": 589,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.72
+    }
+  },
+  {
+    "ts": 1766945458.289,
+    "frame": 590,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.6
+    }
+  },
+  {
+    "ts": 1766945458.321,
+    "frame": 591,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.72
+    }
+  },
+  {
+    "ts": 1766945458.364,
+    "frame": 592,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.83
+    }
+  },
+  {
+    "ts": 1766945458.4,
+    "frame": 593,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.93
+    }
+  },
+  {
+    "ts": 1766945458.43,
+    "frame": 594,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.93
+    }
+  },
+  {
+    "ts": 1766945458.459,
+    "frame": 595,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 34.54
+    }
+  },
+  {
+    "ts": 1766945458.459,
+    "frame": 595,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 34.54
+    }
+  },
+  {
+    "ts": 1766945458.491,
+    "frame": 596,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 37.58
+    }
+  },
+  {
+    "ts": 1766945458.491,
+    "frame": 596,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 37.58
+    }
+  },
+  {
+    "ts": 1766945458.52,
+    "frame": 597,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 43.83
+    }
+  },
+  {
+    "ts": 1766945458.52,
+    "frame": 597,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 43.83
+    }
+  },
+  {
+    "ts": 1766945458.551,
+    "frame": 598,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 54.12
+    }
+  },
+  {
+    "ts": 1766945458.551,
+    "frame": 598,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 18.44
+    }
+  },
+  {
+    "ts": 1766945458.581,
+    "frame": 599,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 54.56
+    }
+  },
+  {
+    "ts": 1766945458.581,
+    "frame": 599,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.65
+    }
+  },
+  {
+    "ts": 1766945458.613,
+    "frame": 600,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 62.03
+    }
+  },
+  {
+    "ts": 1766945458.613,
+    "frame": 600,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.25
+    }
+  },
+  {
+    "ts": 1766945458.644,
+    "frame": 601,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.17
+    }
+  },
+  {
+    "ts": 1766945458.644,
+    "frame": 601,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 43.38
+    }
+  },
+  {
+    "ts": 1766945458.681,
+    "frame": 602,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 72.03
+    }
+  },
+  {
+    "ts": 1766945458.681,
+    "frame": 602,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 56.82
+    }
+  },
+  {
+    "ts": 1766945458.723,
+    "frame": 603,
+    "sid": 11,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 66.75
+    }
+  },
+  {
+    "ts": 1766945458.723,
+    "frame": 603,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 75.29
+    }
+  },
+  {
+    "ts": 1766945458.765,
+    "frame": 604,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 93.54
+    }
+  },
+  {
+    "ts": 1766945458.8,
+    "frame": 605,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 99.36
+    }
+  },
+  {
+    "ts": 1766945458.83,
+    "frame": 606,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 111.02
+    }
+  },
+  {
+    "ts": 1766945458.869,
+    "frame": 607,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 116.97
+    }
+  },
+  {
+    "ts": 1766945458.907,
+    "frame": 608,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 114.13
+    }
+  },
+  {
+    "ts": 1766945458.907,
+    "frame": 608,
+    "sid": 15,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766945458.907,
+    "frame": 608,
+    "sid": 15,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766945458.938,
+    "frame": 609,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 114.95
+    }
+  },
+  {
+    "ts": 1766945458.969,
+    "frame": 610,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 99.57
+    }
+  },
+  {
+    "ts": 1766945459.0,
+    "frame": 611,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.61
+    }
+  },
+  {
+    "ts": 1766945459.036,
+    "frame": 612,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 50.91
+    }
+  },
+  {
+    "ts": 1766945459.065,
+    "frame": 613,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 38.59
+    }
+  },
+  {
+    "ts": 1766945459.095,
+    "frame": 614,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 35.13
+    }
+  },
+  {
+    "ts": 1766945459.127,
+    "frame": 615,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.22
+    }
+  },
+  {
+    "ts": 1766945459.161,
+    "frame": 616,
+    "sid": 13,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 41.3
+    }
+  },
+  {
+    "ts": 1766945459.383,
+    "frame": 623,
+    "sid": 16,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766945459.383,
+    "frame": 623,
+    "sid": 16,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766945459.383,
+    "frame": 623,
     "sid": 17,
     "role": "Player_Generic",
     "jersey": null,
@@ -297,8 +3212,8 @@
     "meta": {}
   },
   {
-    "ts": 1766939678.034,
-    "frame": 992,
+    "ts": 1766945459.383,
+    "frame": 623,
     "sid": 17,
     "role": "Player_Generic",
     "jersey": null,
@@ -306,705 +3221,1286 @@
     "meta": {}
   },
   {
-    "ts": 1766939678.789,
-    "frame": 1015,
+    "ts": 1766945459.827,
+    "frame": 637,
+    "sid": 18,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "PLAYER_APPEAR",
+    "meta": {}
+  },
+  {
+    "ts": 1766945459.827,
+    "frame": 637,
+    "sid": 18,
+    "role": "Player_Generic",
+    "jersey": null,
+    "event": "ROLE_CONFIRMED",
+    "meta": {}
+  },
+  {
+    "ts": 1766945460.953,
+    "frame": 668,
     "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 46.69
+    }
   },
   {
-    "ts": 1766939678.789,
-    "frame": 1015,
+    "ts": 1766945460.953,
+    "frame": 668,
+    "sid": 18,
+    "role": "Bowler",
+    "jersey": null,
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
+  },
+  {
+    "ts": 1766945460.953,
+    "frame": 668,
     "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 46.69
+    }
   },
   {
-    "ts": 1766939689.506,
-    "frame": 1102,
-    "sid": 19,
+    "ts": 1766945460.992,
+    "frame": 669,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 74.0
+    }
   },
   {
-    "ts": 1766939689.506,
-    "frame": 1102,
-    "sid": 19,
+    "ts": 1766945460.992,
+    "frame": 669,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 74.0
+    }
   },
   {
-    "ts": 1766939689.507,
-    "frame": 1102,
-    "sid": 20,
+    "ts": 1766945461.022,
+    "frame": 670,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 82.02
+    }
   },
   {
-    "ts": 1766939689.507,
-    "frame": 1102,
-    "sid": 20,
+    "ts": 1766945461.022,
+    "frame": 670,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 82.02
+    }
   },
   {
-    "ts": 1766939694.762,
-    "frame": 1142,
-    "sid": 21,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939694.762,
-    "frame": 1142,
-    "sid": 21,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939699.169,
-    "frame": 1180,
-    "sid": 22,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939699.169,
-    "frame": 1180,
-    "sid": 22,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939702.884,
-    "frame": 1210,
-    "sid": 23,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939702.884,
-    "frame": 1210,
-    "sid": 23,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939708.451,
-    "frame": 1347,
-    "sid": 24,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939708.451,
-    "frame": 1347,
-    "sid": 24,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939709.981,
-    "frame": 1374,
-    "sid": 25,
+    "ts": 1766945461.054,
+    "frame": 671,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 73.17
+    }
   },
   {
-    "ts": 1766939709.981,
-    "frame": 1374,
-    "sid": 25,
+    "ts": 1766945461.054,
+    "frame": 671,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 73.17
+    }
   },
   {
-    "ts": 1766939718.275,
-    "frame": 1527,
-    "sid": 26,
+    "ts": 1766945461.087,
+    "frame": 672,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 66.37
+    }
+  },
+  {
+    "ts": 1766945461.087,
+    "frame": 672,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 66.37
+    }
+  },
+  {
+    "ts": 1766945461.117,
+    "frame": 673,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 56.22
+    }
+  },
+  {
+    "ts": 1766945461.117,
+    "frame": 673,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 56.22
+    }
+  },
+  {
+    "ts": 1766945461.145,
+    "frame": 674,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 20.1
+    }
+  },
+  {
+    "ts": 1766945461.358,
+    "frame": 679,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 27.29
+    }
+  },
+  {
+    "ts": 1766945461.404,
+    "frame": 680,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.1
+    }
+  },
+  {
+    "ts": 1766945461.45,
+    "frame": 681,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.69
+    }
+  },
+  {
+    "ts": 1766945461.45,
+    "frame": 681,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 36.69
+    }
+  },
+  {
+    "ts": 1766945461.553,
+    "frame": 684,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 21.84
+    }
+  },
+  {
+    "ts": 1766945461.618,
+    "frame": 686,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 23.71
+    }
+  },
+  {
+    "ts": 1766945461.648,
+    "frame": 687,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.4
+    }
+  },
+  {
+    "ts": 1766945461.69,
+    "frame": 688,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 43.74
+    }
+  },
+  {
+    "ts": 1766945461.737,
+    "frame": 689,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 58.86
+    }
+  },
+  {
+    "ts": 1766945461.784,
+    "frame": 690,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.62
+    }
+  },
+  {
+    "ts": 1766945461.822,
+    "frame": 691,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 60.67
+    }
+  },
+  {
+    "ts": 1766945461.865,
+    "frame": 692,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.81
+    }
+  },
+  {
+    "ts": 1766945461.9,
+    "frame": 693,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 72.03
+    }
+  },
+  {
+    "ts": 1766945461.937,
+    "frame": 694,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 61.61
+    }
+  },
+  {
+    "ts": 1766945461.984,
+    "frame": 695,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.59
+    }
+  },
+  {
+    "ts": 1766945462.023,
+    "frame": 696,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 72.18
+    }
+  },
+  {
+    "ts": 1766945462.059,
+    "frame": 697,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 66.12
+    }
+  },
+  {
+    "ts": 1766945462.085,
+    "frame": 698,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 43.0
+    }
+  },
+  {
+    "ts": 1766945462.12,
+    "frame": 699,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.56
+    }
+  },
+  {
+    "ts": 1766945462.18,
+    "frame": 701,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 47.54
+    }
+  },
+  {
+    "ts": 1766945462.211,
+    "frame": 702,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 66.49
+    }
+  },
+  {
+    "ts": 1766945462.24,
+    "frame": 703,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 80.41
+    }
+  },
+  {
+    "ts": 1766945462.28,
+    "frame": 704,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 77.1
+    }
+  },
+  {
+    "ts": 1766945462.317,
+    "frame": 705,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 59.68
+    }
+  },
+  {
+    "ts": 1766945462.357,
+    "frame": 706,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 55.04
+    }
+  },
+  {
+    "ts": 1766945462.4,
+    "frame": 707,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 49.16
+    }
+  },
+  {
+    "ts": 1766945462.427,
+    "frame": 708,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 28.64
+    }
+  },
+  {
+    "ts": 1766945462.458,
+    "frame": 709,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 22.8
+    }
+  },
+  {
+    "ts": 1766945462.458,
+    "frame": 709,
+    "sid": 18,
     "role": "Bowler",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
   },
   {
-    "ts": 1766939718.275,
-    "frame": 1527,
-    "sid": 26,
+    "ts": 1766945462.491,
+    "frame": 710,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 19.42
+    }
+  },
+  {
+    "ts": 1766945462.605,
+    "frame": 713,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.02
+    }
+  },
+  {
+    "ts": 1766945462.652,
+    "frame": 714,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 31.14
+    }
+  },
+  {
+    "ts": 1766945462.652,
+    "frame": 714,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 31.14
+    }
+  },
+  {
+    "ts": 1766945462.7,
+    "frame": 715,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 45.04
+    }
+  },
+  {
+    "ts": 1766945462.7,
+    "frame": 715,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 45.04
+    }
+  },
+  {
+    "ts": 1766945462.74,
+    "frame": 716,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 60.21
+    }
+  },
+  {
+    "ts": 1766945462.74,
+    "frame": 716,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 60.21
+    }
+  },
+  {
+    "ts": 1766945462.778,
+    "frame": 717,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 80.06
+    }
+  },
+  {
+    "ts": 1766945462.778,
+    "frame": 717,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 80.06
+    }
+  },
+  {
+    "ts": 1766945462.821,
+    "frame": 718,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 94.01
+    }
+  },
+  {
+    "ts": 1766945462.821,
+    "frame": 718,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 94.01
+    }
+  },
+  {
+    "ts": 1766945462.849,
+    "frame": 719,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 105.23
+    }
+  },
+  {
+    "ts": 1766945462.849,
+    "frame": 719,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 105.23
+    }
+  },
+  {
+    "ts": 1766945462.879,
+    "frame": 720,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 90.2
+    }
+  },
+  {
+    "ts": 1766945462.879,
+    "frame": 720,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 90.2
+    }
+  },
+  {
+    "ts": 1766945462.911,
+    "frame": 721,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.24
+    }
+  },
+  {
+    "ts": 1766945462.911,
+    "frame": 721,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 51.24
+    }
+  },
+  {
+    "ts": 1766945462.98,
+    "frame": 723,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 42.11
+    }
+  },
+  {
+    "ts": 1766945462.98,
+    "frame": 723,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 42.11
+    }
+  },
+  {
+    "ts": 1766945463.028,
+    "frame": 724,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 92.01
+    }
+  },
+  {
+    "ts": 1766945463.075,
+    "frame": 725,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 126.0
+    }
+  },
+  {
+    "ts": 1766945463.125,
+    "frame": 726,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 132.14
+    }
+  },
+  {
+    "ts": 1766945463.169,
+    "frame": 727,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 124.33
+    }
+  },
+  {
+    "ts": 1766945463.215,
+    "frame": 728,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 121.26
+    }
+  },
+  {
+    "ts": 1766945463.256,
+    "frame": 729,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 95.13
+    }
+  },
+  {
+    "ts": 1766945463.287,
+    "frame": 730,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 83.29
+    }
+  },
+  {
+    "ts": 1766945463.325,
+    "frame": 731,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 78.23
+    }
+  },
+  {
+    "ts": 1766945463.363,
+    "frame": 732,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 64.28
+    }
+  },
+  {
+    "ts": 1766945463.405,
+    "frame": 733,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 34.01
+    }
+  },
+  {
+    "ts": 1766945463.442,
+    "frame": 734,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 20.22
+    }
+  },
+  {
+    "ts": 1766945463.566,
+    "frame": 738,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 38.01
+    }
+  },
+  {
+    "ts": 1766945463.605,
+    "frame": 739,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 54.01
+    }
+  },
+  {
+    "ts": 1766945463.651,
+    "frame": 740,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 55.04
+    }
+  },
+  {
+    "ts": 1766945463.698,
+    "frame": 741,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 36.01
+    }
+  },
+  {
+    "ts": 1766945463.74,
+    "frame": 742,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.08
+    }
+  },
+  {
+    "ts": 1766945463.818,
+    "frame": 744,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 29.55
+    }
+  },
+  {
+    "ts": 1766945463.849,
+    "frame": 745,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 51.62
+    }
+  },
+  {
+    "ts": 1766945463.889,
+    "frame": 746,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 111.8
+    }
+  },
+  {
+    "ts": 1766945463.927,
+    "frame": 747,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 126.75
+    }
+  },
+  {
+    "ts": 1766945463.959,
+    "frame": 748,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 77.41
+    }
+  },
+  {
+    "ts": 1766945463.988,
+    "frame": 749,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 25.08
+    }
+  },
+  {
+    "ts": 1766945464.051,
+    "frame": 751,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 107.07
+    }
+  },
+  {
+    "ts": 1766945464.051,
+    "frame": 751,
+    "sid": 18,
     "role": "Bowler",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BALL_RELEASE",
+    "meta": {
+      "defined_as": "batsman_reaction"
+    }
   },
   {
-    "ts": 1766939723.353,
-    "frame": 1663,
-    "sid": 27,
+    "ts": 1766945464.051,
+    "frame": 751,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 107.07
+    }
   },
   {
-    "ts": 1766939723.353,
-    "frame": 1663,
-    "sid": 27,
+    "ts": 1766945464.083,
+    "frame": 752,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 96.01
+    }
   },
   {
-    "ts": 1766939724.642,
-    "frame": 1703,
-    "sid": 28,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939724.642,
-    "frame": 1703,
-    "sid": 28,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939729.308,
-    "frame": 1766,
-    "sid": 29,
+    "ts": 1766945464.083,
+    "frame": 752,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 96.01
+    }
   },
   {
-    "ts": 1766939729.308,
-    "frame": 1766,
-    "sid": 29,
+    "ts": 1766945464.117,
+    "frame": 753,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 50.01
+    }
   },
   {
-    "ts": 1766939731.786,
-    "frame": 1786,
-    "sid": 30,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939731.786,
-    "frame": 1786,
-    "sid": 30,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939731.787,
-    "frame": 1786,
-    "sid": 31,
+    "ts": 1766945464.117,
+    "frame": 753,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 50.01
+    }
   },
   {
-    "ts": 1766939731.787,
-    "frame": 1786,
-    "sid": 31,
+    "ts": 1766945464.16,
+    "frame": 754,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 37.36
+    }
   },
   {
-    "ts": 1766939731.787,
-    "frame": 1786,
-    "sid": 32,
+    "ts": 1766945464.16,
+    "frame": 754,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 37.36
+    }
   },
   {
-    "ts": 1766939731.787,
-    "frame": 1786,
-    "sid": 32,
+    "ts": 1766945464.191,
+    "frame": 755,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 89.05
+    }
   },
   {
-    "ts": 1766939735.324,
-    "frame": 1811,
-    "sid": 33,
+    "ts": 1766945464.191,
+    "frame": 755,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 89.05
+    }
   },
   {
-    "ts": 1766939735.324,
-    "frame": 1811,
-    "sid": 33,
+    "ts": 1766945464.23,
+    "frame": 756,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 96.14
+    }
   },
   {
-    "ts": 1766939736.726,
-    "frame": 1847,
-    "sid": 34,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939736.726,
-    "frame": 1847,
-    "sid": 34,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939745.394,
-    "frame": 1922,
-    "sid": 35,
+    "ts": 1766945464.23,
+    "frame": 756,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 96.14
+    }
   },
   {
-    "ts": 1766939745.394,
-    "frame": 1922,
-    "sid": 35,
+    "ts": 1766945464.268,
+    "frame": 757,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 143.1
+    }
   },
   {
-    "ts": 1766939745.394,
-    "frame": 1922,
-    "sid": 36,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939745.394,
-    "frame": 1922,
-    "sid": 36,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939745.394,
-    "frame": 1922,
-    "sid": 37,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939745.394,
-    "frame": 1922,
-    "sid": 37,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939749.77,
-    "frame": 1955,
-    "sid": 38,
+    "ts": 1766945464.268,
+    "frame": 757,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 143.1
+    }
   },
   {
-    "ts": 1766939749.77,
-    "frame": 1955,
-    "sid": 38,
+    "ts": 1766945464.298,
+    "frame": 758,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 176.92
+    }
   },
   {
-    "ts": 1766939767.207,
-    "frame": 2314,
-    "sid": 39,
+    "ts": 1766945464.298,
+    "frame": 758,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 176.92
+    }
   },
   {
-    "ts": 1766939767.207,
-    "frame": 2314,
-    "sid": 39,
+    "ts": 1766945464.34,
+    "frame": 759,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 158.53
+    }
   },
   {
-    "ts": 1766939767.207,
-    "frame": 2314,
-    "sid": 40,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939767.207,
-    "frame": 2314,
-    "sid": 40,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939767.282,
-    "frame": 2316,
-    "sid": 41,
+    "ts": 1766945464.34,
+    "frame": 759,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 158.53
+    }
   },
   {
-    "ts": 1766939767.282,
-    "frame": 2316,
-    "sid": 41,
+    "ts": 1766945464.386,
+    "frame": 760,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 30.87
+    }
   },
   {
-    "ts": 1766939788.153,
-    "frame": 2601,
-    "sid": 42,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939788.153,
-    "frame": 2601,
-    "sid": 42,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939792.258,
-    "frame": 2643,
-    "sid": 43,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939792.258,
-    "frame": 2643,
-    "sid": 43,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939806.861,
-    "frame": 2771,
-    "sid": 44,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939806.861,
-    "frame": 2771,
-    "sid": 44,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939809.035,
-    "frame": 2816,
-    "sid": 45,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939809.035,
-    "frame": 2816,
-    "sid": 45,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939809.984,
-    "frame": 2821,
-    "sid": 46,
+    "ts": 1766945464.386,
+    "frame": 760,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 30.87
+    }
   },
   {
-    "ts": 1766939809.984,
-    "frame": 2821,
-    "sid": 46,
+    "ts": 1766945464.432,
+    "frame": 761,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 26.0
+    }
   },
   {
-    "ts": 1766939817.095,
-    "frame": 2865,
-    "sid": 47,
+    "ts": 1766945464.477,
+    "frame": 762,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 71.2
+    }
   },
   {
-    "ts": 1766939817.095,
-    "frame": 2865,
-    "sid": 47,
+    "ts": 1766945464.477,
+    "frame": 762,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 71.2
+    }
   },
   {
-    "ts": 1766939817.095,
-    "frame": 2865,
-    "sid": 48,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939817.095,
-    "frame": 2865,
-    "sid": 48,
-    "role": "Bowler",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939817.095,
-    "frame": 2865,
-    "sid": 49,
+    "ts": 1766945464.518,
+    "frame": 763,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 108.67
+    }
   },
   {
-    "ts": 1766939817.095,
-    "frame": 2865,
-    "sid": 49,
+    "ts": 1766945464.518,
+    "frame": 763,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 108.67
+    }
   },
   {
-    "ts": 1766939817.963,
-    "frame": 2869,
-    "sid": 50,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939817.963,
-    "frame": 2869,
-    "sid": 50,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939821.137,
-    "frame": 2891,
-    "sid": 51,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939821.137,
-    "frame": 2891,
-    "sid": 51,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939823.675,
-    "frame": 2904,
-    "sid": 52,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939823.675,
-    "frame": 2904,
-    "sid": 52,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939823.829,
-    "frame": 2909,
-    "sid": 53,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939823.829,
-    "frame": 2909,
-    "sid": 53,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939824.229,
-    "frame": 2910,
-    "sid": 54,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939824.229,
-    "frame": 2910,
-    "sid": 54,
-    "role": "Wicket_Keeper",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939827.712,
-    "frame": 2956,
-    "sid": 55,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
-  },
-  {
-    "ts": 1766939827.712,
-    "frame": 2956,
-    "sid": 55,
-    "role": "Player_Generic",
-    "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
-  },
-  {
-    "ts": 1766939831.705,
-    "frame": 3038,
-    "sid": 56,
+    "ts": 1766945464.549,
+    "frame": 764,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "PLAYER_APPEAR",
-    "meta": {}
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 127.14
+    }
   },
   {
-    "ts": 1766939831.705,
-    "frame": 3038,
-    "sid": 56,
+    "ts": 1766945464.549,
+    "frame": 764,
+    "sid": 18,
     "role": "Batsman",
     "jersey": null,
-    "event": "ROLE_CONFIRMED",
-    "meta": {}
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 127.14
+    }
+  },
+  {
+    "ts": 1766945464.58,
+    "frame": 765,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "BATSMAN_REACTION",
+    "meta": {
+      "movement": 66.76
+    }
+  },
+  {
+    "ts": 1766945464.58,
+    "frame": 765,
+    "sid": 18,
+    "role": "Batsman",
+    "jersey": null,
+    "event": "SHOT_ATTEMPT",
+    "meta": {
+      "movement": 66.76
+    }
   }
 ]
