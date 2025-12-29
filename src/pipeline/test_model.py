@@ -23,6 +23,7 @@ from core.event_timeline import EventTimeline
 from core.scorecard_detector import ScorecardDetector
 from core.run_detector import RunDetector
 from core.run_count_detector import RunCountDetector
+from core.score_engine import ScoreEngine
 
 
 # --------------------------------------------------
@@ -30,6 +31,7 @@ from core.run_count_detector import RunCountDetector
 # --------------------------------------------------
 VIDEO_PATH = r"C:\cricket-ai\data\samples\test3.mp4"
 MODEL_PATH = r"C:\cricket player train\cricket-ai\yolov8m_production4\weights\best.pt"
+BALL_END_TIMEOUT = 30
 
 
 # --------------------------------------------------
@@ -51,31 +53,33 @@ def infer_role_from_class(name):
 # --------------------------------------------------
 def main():
 
-    # ---------------- Core systems ----------------
     tracker = YoloV8Tracker(MODEL_PATH)
     registry = PlayerRegistry()
     timeline = EventTimeline()
 
-    scorecard_detector = ScorecardDetector()   # backup only
-    run_detector = RunDetector()               # RUN_START
-    run_count_detector = RunCountDetector()    # RUN_COUNT
+    scorecard_detector = ScorecardDetector()
+    run_detector = RunDetector()
+    run_count_detector = RunCountDetector()
+    score_engine = ScoreEngine()
 
-    reader = VideoReader(
-        VIDEO_PATH,
-        resize=(1280, 720),
-        skip=1          # NO frame skipping
-    )
+    reader = VideoReader(VIDEO_PATH, resize=(1280, 720), skip=1)
 
-    # ---------------- Runtime state ----------------
     frame_id = 0
     t0 = time.time()
 
-    batsman_motion = {}        # sid -> deque
-    last_ball_release = -999
-    last_shot_frame = {}       # sid -> frame_id
-    last_run_start = {}        # sid -> frame_id
+    batsman_motion = {}
 
-    cv2.namedWindow("Cricket AI – Run Engine", cv2.WINDOW_NORMAL)
+    # -------- BALL STATE --------
+    ball_active = False
+    ball_id = 0
+    ball_closed = set()
+    run_started_this_ball = False
+
+    last_ball_release = -999
+    last_shot_frame = {}
+    last_run_start = {}
+
+    cv2.namedWindow("Cricket AI – Score Engine", cv2.WINDOW_NORMAL)
 
     # --------------------------------------------------
     # Frame loop
@@ -93,10 +97,9 @@ def main():
                 role="Scorecard",
                 jersey=None,
                 event="SCORECARD_VISIBLE",
-                meta={"location": location}
+                meta={"location": location},
             )
 
-        # ---------------- PLAYER TRACKING ----------------
         detections = tracker.track(frame, conf=0.3)
 
         for det in detections:
@@ -108,26 +111,23 @@ def main():
             box = det["box"]
             x1, y1, x2, y2 = map(int, box)
 
-            # Reject tiny / noisy boxes
             if (x2 - x1) < 60 or (y2 - y1) < 100:
                 continue
 
             center = center_of_box(box)
 
-            # ---------------- SID RESOLUTION ----------------
             sid = registry.resolve_id(
                 raw_id=det["track_id"],
                 center=center,
                 role=role,
-                frame_id=frame_id
+                frame_id=frame_id,
             )
-
             if sid is None:
                 continue
 
             registry.update(sid, center)
 
-            # ---------------- PLAYER_APPEAR ----------------
+            # ---------------- PLAYER EVENTS ----------------
             if sid not in registry.seen_ids:
                 registry.seen_ids.add(sid)
                 timeline.log(
@@ -136,10 +136,9 @@ def main():
                     role=role,
                     jersey=None,
                     event="PLAYER_APPEAR",
-                    meta={}
+                    meta={},
                 )
 
-            # ---------------- ROLE_CONFIRMED ----------------
             if sid not in registry.role_confirmed:
                 registry.role_confirmed.add(sid)
                 timeline.log(
@@ -148,7 +147,7 @@ def main():
                     role=role,
                     jersey=None,
                     event="ROLE_CONFIRMED",
-                    meta={}
+                    meta={},
                 )
 
             # --------------------------------------------------
@@ -156,9 +155,7 @@ def main():
             # --------------------------------------------------
             if role == "Batsman":
 
-                if sid not in batsman_motion:
-                    batsman_motion[sid] = deque(maxlen=6)
-
+                batsman_motion.setdefault(sid, deque(maxlen=6))
                 batsman_motion[sid].append(center)
 
                 if len(batsman_motion[sid]) >= 6:
@@ -166,7 +163,6 @@ def main():
                     dy = batsman_motion[sid][-1][1] - batsman_motion[sid][0][1]
                     movement = math.hypot(dx, dy)
 
-                    # -------- BATSMAN_REACTION --------
                     if movement > 18:
                         timeline.log(
                             frame_id=frame_id,
@@ -174,22 +170,26 @@ def main():
                             role=role,
                             jersey=None,
                             event="BATSMAN_REACTION",
-                            meta={"movement": round(movement, 2)}
+                            meta={"movement": round(movement, 2)},
                         )
 
-                        # virtual BALL_RELEASE
-                        if frame_id - last_ball_release > 40:
-                            last_ball_release = frame_id
+                        if frame_id - last_ball_release > 40 and not ball_active:
+                            ball_active = True
+                            ball_id += 1
+                            run_started_this_ball = False
+                            score_engine.on_ball_start()
+
                             timeline.log(
                                 frame_id=frame_id,
                                 sid=sid,
                                 role="Bowler",
                                 jersey=None,
                                 event="BALL_RELEASE",
-                                meta={"source": "batsman_reaction"}
+                                meta={"ball_id": ball_id},
                             )
 
-                    # -------- SHOT_ATTEMPT --------
+                            last_ball_release = frame_id
+
                     last_shot = last_shot_frame.get(sid, -999)
                     if movement > 30 and frame_id - last_shot > 20:
                         last_shot_frame[sid] = frame_id
@@ -199,48 +199,52 @@ def main():
                             role=role,
                             jersey=None,
                             event="SHOT_ATTEMPT",
-                            meta={"movement": round(movement, 2)}
+                            meta={"movement": round(movement, 2)},
                         )
 
                 # ---------------- RUN_START ----------------
-                shot_frame = last_shot_frame.get(sid, -999)
-                if run_detector.update(
-                    sid=sid,
-                    frame_id=frame_id,
-                    center=center,
-                    last_shot_frame=shot_frame
+                if (
+                    ball_active
+                    and not run_started_this_ball
+                    and run_detector.update(
+                        sid, frame_id, center, last_shot_frame.get(sid, -999)
+                    )
                 ):
+                    run_started_this_ball = True
+                    last_run_start[sid] = frame_id
+
                     timeline.log(
                         frame_id=frame_id,
                         sid=sid,
                         role=role,
                         jersey=None,
                         event="RUN_START",
-                        meta={}
+                        meta={"ball_id": ball_id},
                     )
-                    last_run_start[sid] = frame_id
-                    print(f"🏃 RUN_START @ frame {frame_id} (SID {sid})")
 
                 # ---------------- RUN_COUNT ----------------
-                run_start_frame = last_run_start.get(sid, -999)
-                if run_count_detector.update(
-                    sid=sid,
-                    frame_id=frame_id,
-                    center=center,
-                    frame_h=frame_h,
-                    run_started_frame=run_start_frame
+                if (
+                    ball_active
+                    and run_started_this_ball
+                    and run_count_detector.update(
+                        sid,
+                        frame_id,
+                        center,
+                        frame_h,
+                        last_run_start.get(sid, -999),
+                    )
                 ):
+                    score_engine.on_run(1)
                     timeline.log(
                         frame_id=frame_id,
                         sid=sid,
                         role=role,
                         jersey=None,
                         event="RUN_COUNT",
-                        meta={"runs": 1}
+                        meta={"runs": 1, "ball_id": ball_id},
                     )
-                    print(f"🏏 RUN_COUNT @ frame {frame_id} (SID {sid})")
 
-            # ---------------- Visualization ----------------
+            # ---------------- DRAW ----------------
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
             cv2.putText(
                 frame,
@@ -249,8 +253,45 @@ def main():
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.6,
                 (0, 255, 0),
-                2
+                2,
             )
+
+        # --------------------------------------------------
+        # BALL_END (ONCE PER BALL)
+        # --------------------------------------------------
+        if ball_active and ball_id not in ball_closed:
+
+            if run_started_this_ball:
+                last_run = max(last_run_start.values(), default=-999)
+                if frame_id - last_run > 25:
+                    summary = score_engine.on_ball_end()
+                    ball_active = False
+                    ball_closed.add(ball_id)
+
+                    timeline.log(
+                        frame_id=frame_id,
+                        sid=-1,
+                        role="Match",
+                        jersey=None,
+                        event="BALL_END",
+                        meta={"ball_id": ball_id, **summary},
+                    )
+
+            else:
+                last_shot = max(last_shot_frame.values(), default=-999)
+                if frame_id - last_shot > BALL_END_TIMEOUT:
+                    summary = score_engine.on_ball_end()
+                    ball_active = False
+                    ball_closed.add(ball_id)
+
+                    timeline.log(
+                        frame_id=frame_id,
+                        sid=-1,
+                        role="Match",
+                        jersey=None,
+                        event="BALL_END",
+                        meta={"ball_id": ball_id, **summary},
+                    )
 
         # ---------------- FPS ----------------
         fps = frame_id / (time.time() - t0 + 1e-6)
@@ -261,20 +302,17 @@ def main():
             cv2.FONT_HERSHEY_SIMPLEX,
             0.8,
             (255, 255, 0),
-            2
+            2,
         )
 
-        cv2.imshow("Cricket AI – Run Engine", frame)
+        cv2.imshow("Cricket AI – Score Engine", frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
-    # --------------------------------------------------
-    # Cleanup
-    # --------------------------------------------------
     reader.release()
     cv2.destroyAllWindows()
+    timeline.export_json("events_timeline.json")
 
-    timeline.export_json("event_timeline.json")
     print("Event summary:", timeline.summary())
 
 
