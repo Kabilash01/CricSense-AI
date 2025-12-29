@@ -1,5 +1,6 @@
 import re
 import torch
+import numpy as np
 from PIL import Image
 from transformers import AutoProcessor, AutoModelForVision2Seq
 
@@ -8,8 +9,9 @@ MODEL_ID = "HuggingFaceTB/SmolVLM-256M-Instruct"
 
 class SmolVLMJerseyReader:
     """
-    Jersey number reader using PUBLIC SmolVLM-256M-Instruct.
-    Requires <image> token in prompt.
+    Jersey number reader using SmolVLM.
+    Supports both file paths and NumPy image arrays.
+    Optimized for low latency.
     """
 
     def __init__(self, device=None):
@@ -24,18 +26,19 @@ class SmolVLMJerseyReader:
 
         self.model.eval()
 
-    def read_jersey_number(self, image_path):
-        """
-        Args:
-            image_path (Path or str)
+    def _to_pil(self, img):
+        if isinstance(img, Image.Image):
+            return img.convert("RGB")
 
-        Returns:
-            (number: str | None, raw_text: str)
-        """
+        if isinstance(img, np.ndarray):
+            # OpenCV BGR → RGB
+            return Image.fromarray(img[:, :, ::-1]).convert("RGB")
 
-        image = Image.open(image_path).convert("RGB")
+        return Image.open(img).convert("RGB")
 
-        # ⚠️ <image> token is MANDATORY for SmolVLM
+    def read_jersey_number(self, image_input):
+        image = self._to_pil(image_input)
+
         prompt = (
             "<image>\n"
             "Look at the player's jersey. "
@@ -48,14 +51,12 @@ class SmolVLMJerseyReader:
             text=prompt,
             return_tensors="pt"
         )
-
-        # Move tensors to device
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
 
         with torch.no_grad():
             outputs = self.model.generate(
                 **inputs,
-                max_new_tokens=8,
+                max_new_tokens=4,   # 🔥 reduced for speed
                 do_sample=False
             )
 
@@ -63,7 +64,6 @@ class SmolVLMJerseyReader:
             outputs, skip_special_tokens=True
         )[0].strip()
 
-        # Extract digits safely
         match = re.search(r"\d+", decoded)
         if match:
             return match.group(), decoded

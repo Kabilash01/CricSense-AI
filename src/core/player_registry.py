@@ -1,6 +1,8 @@
 import math
 import cv2
 
+  
+
 class PlayerRegistry:
     def __init__(self, max_idle_frames=60, max_trail_len=40):
         self.players = {}
@@ -8,6 +10,10 @@ class PlayerRegistry:
         self.next_stable_id = 1
         self.max_idle_frames = max_idle_frames
         self.max_trail_len = max_trail_len
+        # In __init__
+        self.seen_ids = set()
+        self.role_confirmed = set()
+        self.jersey_logged = set
 
     def _distance(self, p1, p2):
         return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
