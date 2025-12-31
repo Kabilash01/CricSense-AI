@@ -1,6 +1,6 @@
 import cv2
 
-class VideoReader:
+class VideoReader1:
     def __init__(self, src):
         self.cap = cv2.VideoCapture(src)
 
