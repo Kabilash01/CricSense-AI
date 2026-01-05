@@ -1,45 +1,40 @@
 class ScoreEngine:
     """
-    Event-driven cricket score engine.
-    Consumes RUN_COUNT and BALL_END events.
+    Scoreboard-authoritative cricket score engine.
     """
 
     def __init__(self):
+        # 🔒 Always initialize state
         self.total_runs = 0
-        self.total_balls = 0
-        self.current_over = 0
-        self.ball_in_over = 0
+        self.wickets = 0
+        self.balls = 0
 
-        self.current_ball_runs = 0
-        self.ball_active = False
-
+    # --------------------------------------------------
+    # Ball lifecycle
+    # --------------------------------------------------
     def on_ball_start(self):
-        self.current_ball_runs = 0
-        self.ball_active = True
+        pass
 
-    def on_run(self, runs=1):
-        if self.ball_active:
-            self.current_ball_runs += runs
+    def apply_scoreboard_delta(self, runs: int, wickets: int):
+        """
+        Apply OCR-derived scoreboard delta.
+        """
+        if runs is not None:
+            self.total_runs += max(0, runs)
+
+        if wickets is not None:
+            self.wickets += max(0, wickets)
 
     def on_ball_end(self):
-        if not self.ball_active:
-            return None
+        """
+        Close the ball and return match summary.
+        ALWAYS returns a dict.
+        """
+        self.balls += 1
+        overs = f"{self.balls // 6}.{self.balls % 6}"
 
-        self.total_runs += self.current_ball_runs
-        self.total_balls += 1
-
-        self.ball_in_over += 1
-        if self.ball_in_over == 6:
-            self.ball_in_over = 0
-            self.current_over += 1
-
-        summary = {
-            "runs_this_ball": self.current_ball_runs,
+        return {
             "total_runs": self.total_runs,
-            "overs": f"{self.current_over}.{self.ball_in_over}"
+            "wickets": self.wickets,
+            "overs": overs
         }
-
-        self.ball_active = False
-        self.current_ball_runs = 0
-
-        return summary
