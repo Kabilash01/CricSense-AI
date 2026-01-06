@@ -56,3 +56,9 @@ class RunDetector:
             return True
 
         return False
+
+    def reset(self):
+        """
+        Reset motion history at BALL_END.
+        """
+        self.motion.clear()

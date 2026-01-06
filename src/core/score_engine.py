@@ -1,40 +1,53 @@
 class ScoreEngine:
     """
-    Scoreboard-authoritative cricket score engine.
+    Deterministic cricket score engine.
+    No ML. Event driven.
     """
 
     def __init__(self):
-        # 🔒 Always initialize state
         self.total_runs = 0
-        self.wickets = 0
-        self.balls = 0
+        self.total_balls = 0
+        self.overs = 0
+        self.ball_in_over = 0
 
-    # --------------------------------------------------
-    # Ball lifecycle
-    # --------------------------------------------------
-    def on_ball_start(self):
-        pass
+        self.current_ball_runs = 0
+        self.ball_active = False
+        self.current_striker_sid = None
 
-    def apply_scoreboard_delta(self, runs: int, wickets: int):
-        """
-        Apply OCR-derived scoreboard delta.
-        """
-        if runs is not None:
-            self.total_runs += max(0, runs)
+    # ------------------------
+    # BALL LIFECYCLE
+    # ------------------------
+    def ball_start(self, striker_sid):
+        self.ball_active = True
+        self.current_ball_runs = 0
+        self.current_striker_sid = striker_sid
 
-        if wickets is not None:
-            self.wickets += max(0, wickets)
+    def add_run(self, runs=1):
+        if not self.ball_active:
+            return
+        self.current_ball_runs += runs
 
-    def on_ball_end(self):
-        """
-        Close the ball and return match summary.
-        ALWAYS returns a dict.
-        """
-        self.balls += 1
-        overs = f"{self.balls // 6}.{self.balls % 6}"
+    def ball_end(self):
+        if not self.ball_active:
+            return None
 
-        return {
+        self.total_runs += self.current_ball_runs
+        self.total_balls += 1
+
+        self.ball_in_over += 1
+        if self.ball_in_over == 6:
+            self.ball_in_over = 0
+            self.overs += 1
+
+        summary = {
+            "runs_this_ball": self.current_ball_runs,
             "total_runs": self.total_runs,
-            "wickets": self.wickets,
-            "overs": overs
+            "overs": f"{self.overs}.{self.ball_in_over}",
+            "striker_sid": self.current_striker_sid
         }
+
+        self.ball_active = False
+        self.current_ball_runs = 0
+        self.current_striker_sid = None
+
+        return summary
