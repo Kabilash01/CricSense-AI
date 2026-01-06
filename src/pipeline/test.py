@@ -198,7 +198,9 @@ def main():
     # ---------------- CLEANUP ----------------
     reader.release()
     cv2.destroyAllWindows()
-    timeline.save("events.json")
+    out_path = Path("events_timeline_yolo_only.json")
+    timeline.export(out_path)
+    print(f"[OK] YOLO-only timeline saved to {out_path}")
 
     print("[INFO] Pipeline finished")
 
